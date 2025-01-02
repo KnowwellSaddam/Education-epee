@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Epee Education</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="images/fev.png" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- Navigation Section -->
+<header class="site-header">        
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light btm-line">
+     <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"><img class="img-fluid" src="images/site-logo.svg" alt=""></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li clas="navbar-item">
+              <a href="#" class="nav-link">Classes</a>
+              </li>
+              <li clas="navbar-item">
+                <a href="about-us.html" class="nav-link">About Us</a>
+                </li>
+              <li clas="navbar-item">
+                <a href="#" class="nav-link">Pricing & FAQ</a>
+            </li>  
+            <li clas="navbar-item">
+                <a href="#" class="nav-link">For Business</a>
+            </li>
+        
+          </ul>
+          <form class="navbar-form form-inline">
+			<div class="input-group search-box">
+                <div class="input-group-append">
+					<span class="input-group-text"><img src="images/search.png" alt=""></span>
+				</div>								
+				<input type="text" id="search" class="form-control" placeholder="Search">
+                <a href="#" class="shop-cart"><img src="images/cart.png" alt=""> Cart </a>
+			</div>
+           
+		</form>
+
+        <div class="navbar-nav action-buttons ml-auto">
+			<a href="#" data-toggle="modal" data-target="#login" class="nav-item nav-link mr-4">Login</a>
+			<a href="#" data-toggle="modal" data-target="#register"  class="nav-item nav-link">Get Started</a>			
+		</div>
+        </div> 
+     </div>
+    </nav>                                           
+</header>
+
+<!-- login form -->
+
+<div class="modal custom-form fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="images/close.png" alt="">
+          </button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="Username">Username</label>
+              <input type="text" class="form-control" id="Username">
+            </div>
+            <div class="form-group">
+              <label for="password1">Password</label>
+              <input type="password" class="form-control" id="password1">
+            </div>
+          </div>
+          <div class="modal-footer border-top-0 d-block justify-content-center">
+            <button type="submit" class="btn btn-success">Login</button>
+                <a href="#" class="forgot_pass">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal custom-form fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Sign up and start Learning! <span>Fill in your profile so we can recommend classes for you.</span></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="images/close.png" alt="">
+          </button>
+        </div>
+        <form>
+          <div class="modal-body row">
+            <div class="form-group col-md-6">
+              <label for="first-name">First name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="last-name">Last name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="last-name">Current situation*</label>
+                <select class="gfield_select">
+                    <option value="high-school-student">High School Student</option>
+                    <option value="university-student">University Student</option>
+                    <option value="young-professional">Young Professional</option>
+                    <option value="professional">Experienced Professional</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Graduation-year">Graduation year</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-12">
+                <label for="School-Name">School Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Location">Location</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="State">State / Province</label>
+                <input type="text" class="form-control">
+              </div>
+          </div>
+          <div class="modal-footer border-top-0 d-block justify-content-center">
+            <button type="submit" class="btn btn-success">Sign up for free</button>
+                <a href="#" class="forgot_pass">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<main>
+<!-- Cover Banner start -->
+<section class="inner-banner h-circle">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 ">
+               <div class="site-title"  data-aos="fade-right" data-aos-duration="1000">
+                <h1>About Us</h1>
+               </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+               <div class="abt-text"  data-aos="fade-right" data-aos-duration="1100">
+                <h6>Did you know 9 in 10 professionals (93%) say they never use over 50% of what they learned in school?  IT’S TIME TO FIX THIS!</h6>
+                <p>Epee provides virtual education over the topics that high schools and universities never teach.  We ask industry professionals to share both their knowledge and actual experiences, so you can learn from their decades of working in complex, real-world situations.  By doing this, our attendees learn and retain the application, context, and nuance that is typically missing in an academic class.</p>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Cover Banner end -->
+
+
+<section class="section about_section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+               <div class="grid-item">
+                <figure>
+                    <img src="images/grid01.jpg" alt="" data-aos="zoom-in" data-aos-duration="1100">
+                    <img src="images/grid02.jpg" alt="" data-aos="zoom-out" data-aos-duration="1200">
+                </figure>
+                <figure><img src="images/grid03.jpg" alt="" data-aos="fade-right" data-aos-duration="1300"></figure>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+               <div class="box_sec">
+                <div class="green_box box-item">
+                    <p data-aos="fade-down" data-aos-duration="1300">Epee also offers professionals and professional
+                    societies a FREE VIRTUAL LIBRARY to teach people
+                    around the world.<br>
+                    Contact <b>Alan Levy</b> to start your own virtual library today.</p>
+                    <a href="#" class="btn" data-aos="zoom-in" data-aos-duration="1200">Contact</a>
+                </div>
+                <div class="default box-item">
+                    <p data-aos="fade-down" data-aos-duration="1400">Please join our mission to bridge the gap<br> between academics and the real world!</p>
+                    <a href="#" class="btn" data-aos="zoom-out" data-aos-duration="1300">Join For Free</a>
+                </div>
+
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="client-content">
+  <div class="container">
+    <p data-aos="fade-up" data-aos-duration="1300">Epee Education is pleased to announce our partnership with Comprehensive Consulting & Management, LLC (CMM) on a new venture in staffing for engineering students and young professionals in the Northeast USA.</p>
+    <p data-aos="fade-up" data-aos-duration="1300">So many potential positions for engineering students and young professionals are project-related and never get posted through HR. CCM's has a unique ability to connect students and YPs with these types of positions. This is incredibly valuable at a time entry-level positions are particularly hard to find via the normal route.</p>  
+    <p data-aos="fade-up" data-aos-duration="1300">Any student or YP who is placed with a company through CCM will earn a free 1-year subscription to Epee as part of the agreement.  Epee bridges the gap between academia and industry, and our partnership with CCM will enable students and YPs to actually gain experience in addition to our experience-focused online courses.</p>
+  </div>
+
+  <div class="client_logo">
+    <div class="container-fluid" data-aos="fade-up" data-aos-duration="1300">
+      <div class="client_logo_wrapper">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <div class="dots-img">
+              <img src="images/dots-img01.svg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="site-logo">
+              <img src="images/logo b.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="cm-logo">
+              <img src="images/cm-logo.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="dots-img">
+              <img src="images/dots-img-2.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Our client start -->
+<section class="section our_client_section" data-aos="fade-down" data-aos-duration="1500">
+  <div class="container-fluid">
+    <div class="site-heading">
+      <h3>Presenters</h3>
+    </div>
+    <div class="our-clients">
+      <div class="card-item">
+        <figure><img src="images/Jonathan-2015Headshot.jpg" alt=""></figure>
+        <strong>Jonathan Cameron CFP®</strong>
+        <p>Founder & Principal, CameronDowning, Inc.</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Eleanor-Small.jpg" alt=""></figure>
+        <strong>Dr. Eleanor Small</strong>
+        <p>PhD, Johnson & Johnson, Principal Scientist</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Teresa-Whitney.jpg" alt=""></figure>
+        <strong>Teresa Whitney, Ph.D.</strong>
+        <p>GlaxoSmithKline (GSK), Workplace Design & Change Manager</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Steven-Jacobs.jpg" alt=""></figure>
+        <strong>Steven Jacobs</strong>
+        <p>Global BioPharm Solutions, President</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Tom-Bell.jpg" alt=""></figure>
+        <strong>Tom Bell</strong>
+        <p>Vertex Labs, CEO / Co-Founder</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Alan-Levy.jpg" alt=""></figure>
+        <strong>Alan Levy</strong>
+        <p>Epee Education, Founder / President</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Kevin-Cuthill.jpg" alt=""></figure>
+        <strong>Kevin Cuthill, CFP®, AAMS®</strong>
+        <p>Edward Jones, Financial Planner</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Megan-Kelly.jpg" alt=""></figure>
+        <strong>Megan Kelly</strong>
+        <p>Mace Group, Director of Recruiting</p>
+      </div>
+
+      <div class="card-item">
+        <figure><img src="images/Paul-Falding.jpg" alt=""></figure>
+        <strong>Paul Falding</strong>
+        <p>Turner & Townsend, Sr Project Controls Manager</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Kevin-Headshot.jpg" alt=""></figure>
+        <strong>Dr. Kevin Bukatman</strong>
+        <p>Founder & President of College Planning Service America</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Michael-Asher.jpg" alt=""></figure>
+        <strong>Michael Asher, PMP, CPM</strong>
+        <p>Senior Project Manager, CRB</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Conway-Headshot.jpg" alt=""></figure>
+        <strong>Lisa Conway, LEED®AP ID+C</strong>
+        <p>VP, Sustainability - Americas Interface</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Headshot.jpg" alt=""></figure>
+        <strong>Michael Browning</strong>
+        <p>Owner, Allstate Insurance Agency</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Oluwaseun-picture.jpg" alt=""></figure>
+        <strong>Oluwaseun Adebayo-Omoju</strong>
+        <p>Head of Business Development, Autusbridge Consulting</p>
+      </div>
+
+      <div class="card-item">
+        <figure><img src="images/NGB-Headshot.jpg" alt=""></figure>
+        <strong>Nicholas Bucci CFP®</strong>
+        <p>Financial Advisor, BLBB Advisors</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Phil-Gonski.jpg" alt=""></figure>
+        <strong>Philip Gonski, PE</strong>
+        <p>Burns Engineering, Sr. Project Manager</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Emilie-Pelletier.jpg" alt=""></figure>
+        <strong>Emilie Pelletier, PE</strong>
+        <p>Iovance Biotherapeutics, Sr. Director of Process Engineering</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Austin-Hodge.jpg" alt=""></figure>
+        <strong>Austin Hodge</strong>
+        <p>Genesis Engineers, Director of Project Controls</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Fern-Headshot.jpg" alt=""></figure>
+        <strong>Fern Gookin, LEED AP</strong>
+        <p>Director of Sustainability, Revolution Recovery</p>
+      </div>
+    </div>
+   
+  </div>
+</section>
+<!-- Our client end -->
+
+<!-- Individual Courses start -->
+<section class="individual_Courses">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-right" data-aos-duration="1800">
+        <div class="light-green two-clmn" data-aos="zoom-out">
+          <span>Individual Courses</span>
+          <strong><sup>$</sup> 0-20</strong>
+          <h5>Epee Education Will Never Be Wealth Dependent!!</h5>
+          <ul class="list-unstyled">
+            <li> Select topics of greatest interest</li>
+            <li>Most classes are 30-60 minutes</li>
+            <li>$10 per hour of content</li>
+            <li>Watch on-demand from our ever-growing library</li>
+          </ul>
+          <a href="#" class="btn">Go To Class List</a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
+        <div class="light-gray two-clmn" data-aos="zoom-out">
+          <span>Monthly Subscription</span>
+          <strong><sup>$</sup> 25</strong>
+          <h5>Less Than $1 Per Day!!</h5>
+          <h4>New: 1 Month Free Trial</h4>
+          <ul class="list-unstyled">
+            <li>Epee Membership provides open-access to the library</li>
+            <li>Click to View - No Delays, No Expiration</li>
+            <li>After trial, still less than $1 per day</li>
+            <li>Most cost effective solution</li>
+          </ul>
+          <p>Excludes content only for experienced professionals</p>
+          <a href="#" class="btn">Get Monthly Subscription</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Individual Courses end -->
+
+<!-- our_client_section start -->
+<section class="section our_client_section">
+  <div class="container-fluid">
+    <div class="client_testimonial">
+      <div class="site-heading" data-aos="fade-up" data-aos-duration="2400">
+        <h3>People Love Us<br>
+          and Our Strategies</h3>
+      </div>
+<!-- Testimonial slider -->
+      <div class="testimonial" data-aos="fade-right" data-aos-duration="2500">
+        <div class="testi_info">
+          <p>“I believe when I showed up on my first day of employment, I basically knew nothing. College teaches you the theory and some of the application of how items operate in the power industry, but many of the calculated methods at University relied on antiquated equipment and analysis.”</p>
+          <div class="d-flex align-items-center">
+            <img src="images/client-img01.png" alt="">
+            <h5 class="mb-0">
+              Philip Gonski
+              <span>Sr. Project Manager - Burns Engineering</span>
+            </h5>
+          </div>
+        </div>
+        <div class="testi_info">
+          <p>"Our academic classes help us learn the fundamentals of engineering, and supposedly group projects teach us to “work with others.” What school did not teach me was how to lead by influence, especially when some of my colleagues are peers or out rank me."</p>
+          <div class="d-flex align-items-center">
+            <img src="images/client-img02.png" alt="">
+            <h5 class="mb-0">
+              Dr. Eleanor Small
+              <span>Principal Scientist - Johnson & Johnson</span>
+            </h5>
+          </div>
+        </div>
+        <div class="testi_info">
+          <p>“I believe when I showed up on my first day of employment, I basically knew nothing. College teaches you the theory and some of the application of how items operate in the power industry, but many of the calculated methods at University relied on antiquated equipment and analysis.”</p>
+          <div class="d-flex align-items-center">
+            <img src="images/client-img01.png" alt="">
+            <h5 class="mb-0">
+              Philip Gonski
+              <span>Sr. Project Manager - Burns Engineering</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- our_client_section end -->
+
+<!-- Counter section start -->
+<section class="section counter_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="count-num">
+                    <h5><img src="images/counter-dot.svg" alt=""> 120</h5>
+                    <p>Instructor and Teachers</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="count-num">
+                    <h5><img src="images/counter-dot.svg" alt=""> 9764+</h5>
+                    <p>People took Our Courses</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="count-num">
+                    <h5><img src="images/counter-dot.svg" alt=""> 4768</h5>
+                    <p>Finished Session</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="count-num">
+                    <h5><img src="images/counter-dot.svg" alt="">100%</h5>
+                    <p>Satisfied Customers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Counter section end -->
+
+<!-- Email section start -->
+<section class="mail_us_section">
+ <div class="strip-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-6 col-sm-6">
+        <div class="site-heading" data-aos="fade-up" data-aos-duration="1500" >
+          <h3 class="mb-0">Keep Connection,<br>
+            Subscribe Now!</h3>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-6 col-sm-6">
+        <div class="mail-sec" data-aos="fade-up" data-aos-duration="1600">
+          <h4>Enter Your Email Address</h4>
+          <form action="" class="d-flex">
+            <input type="text" placeholder="Email Address">
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+<!-- Email section end -->
+</main>
+
+<!-- footer section Start -->
+<footer class="footer" style="background-image: url(images/strip-img.png);">
+    <div class="container-fluid">
+        <div class="row">
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1300">
+            <div class="footer_info">
+              <a href="index.html"><img src="images/footer-logo.png" alt=""></a>
+              <p class="mt-4">Epee Education is an e-learning platform for students and young professionals to fill the gap between academics and the real world</p>
+              <p class="copy_right">© Epee 2021. All rights reserved.</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1400">
+          <div class="footer_link">
+            <h4>Links</h4>
+            <div class="d-flex justify-content-between">
+              <ul class="list-unstyled">
+                <li><a href="#">Become A Member</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#"> Privacy Policy</a></li>
+              </ul>
+              <ul class="list-unstyled">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1500">
+          <div class="footer_link end-ftr">
+            <h4>Contact Us</h4>
+            <p><a href="mailto:admin@epee-education.com">admin@epee-education.com</a><br>
+            <a href="mailto:hello@epee-education.com">hello@epee-education.com</a><br>
+            <b><a href="tel:01234567889">01234567889</a></b>
+          </p>
+          <p class="copy_right">Feel free to contact us for any questions!</p>
+          </div>
+         </div>
+        </div>
+        <div class="ftr-btm">
+          
+        </div>
+    </div>
+</footer>
+       
+<!-- footer section Close -->
+
+<!-- back top button -->
+<div class="back-top"><a href="javascript:void(0)"><i class="fa fa-angle-up"></i></a></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>

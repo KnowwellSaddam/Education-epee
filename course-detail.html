@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Epee Education</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="images/fev.png" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+<!-- Navigation Section -->
+<header class="site-header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light btm-line">
+     <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"><img class="img-fluid" src="images/site-logo.svg" alt=""></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li clas="navbar-item">
+              <a href="#" class="nav-link">Classes</a>
+              </li>
+              <li clas="navbar-item">
+                <a href="about-us.html" class="nav-link">About Us</a>
+                </li>
+              <li clas="navbar-item">
+                <a href="#" class="nav-link">Pricing & FAQ</a>
+            </li>
+            <li clas="navbar-item">
+                <a href="#" class="nav-link">For Business</a>
+            </li>
+
+          </ul>
+          <form class="navbar-form form-inline">
+			<div class="input-group search-box">
+                <div class="input-group-append">
+					<span class="input-group-text"><img src="images/search.png" alt=""></span>
+				</div>
+				<input type="text" id="search" class="form-control" placeholder="Search">
+                <a href="#" class="shop-cart"><img src="images/cart.png" alt=""> Cart </a>
+			</div>
+
+		</form>
+
+        <div class="navbar-nav action-buttons ml-auto">
+			<a href="#" data-toggle="modal" data-target="#login" class="nav-item nav-link mr-4">Login</a>
+			<a href="#" data-toggle="modal" data-target="#register"  class="nav-item nav-link">Get Started</a>
+		</div>
+        </div>
+     </div>
+    </nav>
+</header>
+
+<!-- login form -->
+
+<div class="modal custom-form fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="images/close.png" alt="">
+          </button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="Username">Username</label>
+              <input type="text" class="form-control" id="Username">
+            </div>
+            <div class="form-group">
+              <label for="password1">Password</label>
+              <input type="password" class="form-control" id="password1">
+            </div>
+          </div>
+          <div class="modal-footer border-top-0 d-block justify-content-center">
+            <button type="submit" class="btn btn-success">Login</button>
+                <a href="#" class="forgot_pass">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
+
+<div class="modal custom-form fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">Sign up and start Learning! <span>Fill in your profile so we can recommend classes for you.</span></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="images/close.png" alt="">
+        </button>
+    </div>
+    <form>
+        <div class="modal-body row">
+        <div class="form-group col-md-6">
+            <label for="first-name">First name</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="last-name">Last name</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="last-name">Current situation*</label>
+            <select class="gfield_select">
+                <option value="high-school-student">High School Student</option>
+                <option value="university-student">University Student</option>
+                <option value="young-professional">Young Professional</option>
+                <option value="professional">Experienced Professional</option>
+            </select>
+            </div>
+            <div class="form-group col-md-6">
+            <label for="Graduation-year">Graduation year</label>
+            <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-12">
+            <label for="School-Name">School Name</label>
+            <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+            <label for="Location">Location</label>
+            <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+            <label for="State">State / Province</label>
+            <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="modal-footer border-top-0 d-block justify-content-center">
+        <button type="submit" class="btn btn-success">Sign up for free</button>
+            <a href="#" class="forgot_pass">Forgot your password?</a>
+        </div>
+    </form>
+    </div>
+</div>
+</div>
+
+<main>
+<!-- Cover Banner start -->
+<section class="inner-banner lesson-ser">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="main_video">
+                  <!-- <video width="400" controls>
+                    <source id="vid_frame" src="video/Epee-courses.mp4" type="video/mp4">
+                    <iframe src="video/Epee-courses.mp4">
+
+                    </iframe>
+                    Your browser does not support HTML video.
+                  </video> -->
+                  <iframe id="vid_frame" src="video/Epee-courses.mp4" frameborder="0" width="560" height="315"></iframe>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="video-list-container">
+                    <h2>Lessons in this course</h2>
+                    <ul id="vid-list" class="video_list">
+                      <li>
+                        <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='video/Epee-courses.mp4'">
+                          <div class="desc">Space Management in regard to personal and work spaces in your home</div>
+                        </a>
+                        <small>05:30</small>
+                      </li>
+                      <li>
+                        <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='video/Epee-courses.mp4'">
+                          <div class="desc">Value of applying space management principles to your home office</div>
+                        </a>
+                        <small>10:00</small>
+                      </li>
+                      <li>
+                        <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='video/Epee-courses.mp4'">
+                          <div class="desc">Study your space and how you interact with it</div>
+                        </a>
+                        <small>8:30</small>
+                      </li>
+                      <li>
+                        <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='video/Epee-courses.mp4'">
+                          <div class="desc">Space optimization provides increased productivity within the space</div>
+                        </a>
+                        <small>6:00</small>
+                      </li>
+                      <li>
+                        <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='video/Epee-courses.mp4'">
+                          <div class="desc">Quick Tips to Optimize your spaces:  DCAP Principle</div>
+                        </a>
+                        <small>9:45</small>
+                      </li>
+                      <li>
+                        <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='video/Epee-courses.mp4'">
+                          <div class="desc">Make your space work for you</div>
+                        </a>
+                        <small>5:15</small>
+                      </li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Cover Banner end -->
+
+<section class="popular_classes management">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <div class="card">
+           <div class="card-body">
+             <h3>Basics of Space Management for a Home Office</h3>
+           <p class="card-text mb-2">Business , Personal Development , Professional Development</p>
+            <div class="d-flex align-items-center client-info">
+                <img src="images/dr-kavin.png" alt="">
+                 <span class="client-name">Oluwaseun Adebayo-Omoju</span>
+                <span class="timer"><img src="images/timer.png" alt=""> 45 min</span>
+            </div>
+           </div>
+       </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Completion Code">
+          <div class="input-group-append">
+            <button class="btn btn-success" type="button" id="button-addon2">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- course-info start  -->
+<section class="course-info overview_sec mt-5 ">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="course-txt">
+              <ul class="list-unstyled custom-tab">
+                <li class="active" data-tab="overview">Overview</li>
+                <li data-tab="questions">Questions</li>
+                <li data-tab="reviews">Reviews</li>
+              </ul>
+
+              <div class="content-tab active" id="overview">
+                <h5>With so many of us working from home due to COVID-19, Oluwaseun Adebayo-Omoju wants to share her insight on the basics of Space Management.  We all have limited space available. Oluwaseun will get you thinking about your personal and work spaces, what's in them, and how you use them.  Her tips can help you take control of your personal and work spaces to make them - and you - more productive!</h5>
+                <p>This is even more helpful for those in small urban apartments.  If Oluwaseun was able to create productive work/study space for herself in a dormitory room shared with 6 other people, she can help you figure out your unique situation!!</p>
+                <ul class="accordion mt-2 list-unstyled">
+                  <li class="active">
+                    <h5>Topics you’ll learn</h5>
+                    <div class="drop">
+                     <ul class="list-unstyled">
+                       <li> Space Management in regard to personal and work spaces in your home</li>
+                       <li>Value of applying space management principles to your home office</li>
+                       <li>Study your space and how you interact with it</li>
+                       <li>Space optimization provides increased productivity within the space</li>
+                       <li>Quick Tips to Optimize your spaces:  DCAP Principle</li>
+                       <li>Make your space work for you</li>
+                     </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <h5>Objective</h5>
+                    <div class="drop">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id optio quae repudiandae dolore vero veli.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="content-tab" id="questions">
+                <form action="">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-8">
+                      <div class="form-group d-flex has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Search for a question">
+                      </div>
+                    </div>
+                    <div class="col-lg-1 text-center">
+                      <span>Or</span>
+                    </div>
+                    <div class="col-lg-3">
+                      <button class="btn" type="submit">Ask A Question</button>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="user_comments">
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1">
+                      <span><img src="images/unsplash.png" alt="unsplash"></span>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5>Sit magna sit sem netus volutpat, sed. At eu dignissim euismod in aliquam, semper.</h5>
+                          <p class="card-text">Porttitor etiam lorem accumsan, nisl mattis natoque interdum neque. Augue vitae varius urna ...</p>
+                         <div class="d-flex user_date">
+                            <div>
+                              <span>User Name</span>
+                              <span>Feb 02, 2022</span>
+                            </div>
+
+                             <a href="#"><img src="images/comments.png" alt="comments"> Post An Answer</a>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                      <span class="user_respons">
+                        <b>2</b>
+                        Responses
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1">
+                      <span><img src="images/unsplash.png" alt="unsplash"></span>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5>Amet at posuere ullamcorper pellentesque id sed vitae. Luctus magna vitae amet, etiam cursus amet quis vulputate hendrerit.</h5>
+                          <p class="card-text">Porttitor etiam lorem accumsan, nisl mattis natoque interdum neque. Augue vitae varius urna ...</p>
+                         <div class="d-flex user_date">
+                            <div>
+                              <span>User Name</span>
+                              <span>Feb 01, 2022</span>
+                            </div>
+
+                             <a href="#"><img src="images/comments.png" alt="comments"> Post An Answer</a>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                      <span class="user_respons">
+                        <b>1</b>
+                        Responses
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1">
+                      <span><img src="images/unsplash.png" alt="unsplash"></span>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5>Nec lorem ipsum risus, dolor, parturient lobortis duis sed..</h5>
+                          <p class="card-text">Molestie praesent id elit sit sollicitudin ornare etiam velit. Lacinia consectetur ipsum nunc dia ...</p>
+                         <div class="d-flex user_date">
+                            <div>
+                              <span>User Name</span>
+                              <span>Jan 28, 2022</span>
+                            </div>
+
+                             <a href="#"><img src="images/comments.png" alt="comments"> Post An Answer</a>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                      <span class="user_respons">
+                        <b>8</b>
+                        Responses
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-1 col-md-1">
+                      <span><img src="images/unsplash.png" alt="unsplash"></span>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5>Quam ipsum viverra eu urna. Pretium ut odio tortor quis sit sit tortor hendrerit fringilla.</h5>
+                          <p class="card-text">Turpis sollicitudin malesuada pharetra montes, volutpat vitae, nec praesent tellus. Commodo ...</p>
+                         <div class="d-flex user_date">
+                            <div>
+                              <span>User Name</span>
+                              <span>Jan 12, 2022</span>
+                            </div>
+
+                             <a href="#"><img src="images/comments.png" alt="comments"> Post An Answer</a>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                      <span class="user_respons">
+                        <b>3</b>
+                        Responses
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-tab" id="reviews">
+                <h3>Post a review</h3>
+                <form action="">
+                  <h5>Mitchel john <span><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></span> <small>20 min ago</small></h5>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus repudiandae, dolores et voluptates incidunt aspernatur praesentium officia. Animi facilis cum molestias eos natus laborum, reiciendis a ipsum, iure consequatur quos?</p>
+                  <textarea class="form-control" name="" id="" placeholder="Message"></textarea>
+                  <button class="btn mt-3" type="submit">Submit</button>
+                </form>
+
+              </div>
+              <div class="social-icon">
+                <span>Share this Course</span>
+                <a href="#"><img src="images/facebook.svg" alt=""></a>
+                <a href="#"><img src="images/linkedin.svg" alt=""></a>
+                <a href="#"><img src="images/twitter.svg" alt=""></a>
+                <a href="#"><img src="images/email.svg" alt=""></a>
+                <a href="#"><img src="images/link-box.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+           <aside>
+            <div class="right-con">
+              <div class="certificate">
+                <ul class="list-unstyled"  data-aos="fade-down" data-aos-duration="900">
+                  <li><img src="images/license.svg" alt=""> Certificate of Completion</li>
+                  <li><img src="images/folder-clock-outline.svg" alt=""> Class available for 6 months</li>
+                  <li><img src="images/cloud-download-outline.svg" alt=""> 0 downloadable resources</li>
+                  <li><img src="images/school-outline.svg" alt=""> High School Student grade</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="d-flex dr-info"  data-aos="fade-down" data-aos-duration="1000">
+              <figure><img src="images/dr-kavin.png" alt=""></figure>
+              <div class="dr-kevin-info">
+                <h5>Dr. Kevin Bukatman</h5>
+                <p>Founder & President of College Planning Service America</p>
+              </div>
+            </div>
+           <div class="more-info mt-3"  data-aos="fade-down" data-aos-duration="1100">
+            <p>Dr. Kevin L. Bukatman, Founder & President of College Planning Service America, has been a consultant for families of college-bound families since 2006. He has presented hundreds of seminars and workshops on a variety of admissions and financial aid topics... <a href="javascript:void(0);">Read More</a></p>
+             <a href="#" class="btn">Leave a Message</a>
+           </div>
+           </aside>
+          </div>
+         </div>
+    </div>
+</section>
+<!-- course-info end  -->
+
+<!-- Popular More Classes start -->
+<section class="section popular_classes course_step ">
+  <div class="container-fluid">
+      <div class="site-heading" >
+          <h2 class="mb-3" data-aos="fade-down" data-aos-duration="800">Top Selling Courses </h2>
+      </div>
+      <div class="categ-item" data-aos="fade-down" data-aos-duration="1000">
+          <div class="card">
+             <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/courses01.png" alt="Card image"><span class="orng-clr">HS</span></a>
+              <div class="card-body">
+              <small class="price01">$10</small>
+              <p class="card-text mb-2">Business , Personal Development</p>
+                <h5 class="card-title"><a href="#">Giving Up?! Surprise, it can Actually be a Growth Tool!</a></h5>
+               <div class="d-flex align-items-center client-info">
+                   <img src="images/dr-kavin.png" alt="">
+                    <span class="client-name">Dr. Kevin </span>
+                   <span class="timer"><img src="images/timer.png" alt=""> 60 min</span>
+               </div>
+              </div>
+          </div>
+          <div class="card">
+            <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/edu01.jpg" alt="Card image"><span class="blue-clr">YP</span></a>
+             <div class="card-body">
+             <small class="price01">$10</small>
+             <p class="card-text mb-2">College Prep, Personal Development</p>
+               <h5 class="card-title"><a href="#">Student Debt: The Hidden Dangers</a></h5>
+              <div class="d-flex align-items-center client-info">
+                  <img src="images/jothan.png" alt="">
+                   <span class="client-name">jothan </span>
+                  <span class="timer"><img src="images/timer.png" alt=""> 45 min</span>
+              </div>
+             </div>
+         </div>
+         <div class="card">
+            <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/edu02.jpg" alt="Card image"><span class="cyan-clr">UNI</span></a>
+            <div class="card-body">
+             <small class="price01">$10</small>
+             <p class="card-text mb-2">College Prep, Personal Development</p>
+               <h5 class="card-title"><a href="#">College Admissions Trends Today</a></h5>
+              <div class="d-flex align-items-center client-info">
+               <img src="images/alan.png" alt="">
+                   <span class="client-name">Alan Levy</span>
+                  <span class="timer"><img src="images/timer.png" alt=""> 23 min</span>
+              </div>
+             </div>
+         </div>
+      </div>
+  </div>
+</section>
+
+<!-- Popular More Classes end -->
+
+<!-- More suggestions start -->
+<section class="all_courses popular_classes">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-3 col-md-6">
+        <div class="classes-txt"  data-aos="fade-down" data-aos-duration="1000">
+          <h3>More suggestions<br> for you</h3>
+          <p>Check out the courses or get a Full-Access Membership</p>
+          <a href="#"><img src="images/right-arrow-white.png" alt=""> See More Courses</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card"  data-aos="fade-down" data-aos-duration="1100">
+          <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/edu01.jpg" alt="Card image"><span class="cyan-clr">uni</span></a>
+           <div class="card-body">
+           <small class="price01">$10</small>
+           <p class="card-text mb-2">Personal Development, Personal Finances...</p>
+             <h5 class="card-title"><a href="#">Perspective on the GameStop Stock Manipulation Situation</a></h5>
+            <div class="d-flex align-items-center client-info">
+                <img src="images/jothan.png" alt="">
+                 <span class="client-name">Jonathan </span>
+                <span class="timer"><img src="images/timer.png" alt=""> 5 min</span>
+            </div>
+           </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card"  data-aos="fade-down" data-aos-duration="1200">
+          <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/classes04.png" alt="Card image"><span class="red-clr">pro</span></a>
+           <div class="card-body">
+           <small class="price01">$10</small>
+           <p class="card-text mb-2">Business, Engineering, Personal Development...</p>
+             <h5 class="card-title"><a href="#">Talking to your Boss when you're Overloaded</a></h5>
+            <div class="d-flex align-items-center client-info">
+                <img src="images/alan.png" alt="">
+                 <span class="client-name">Alan Levy</span>
+                <span class="timer"><img src="images/timer.png" alt=""> 3 min</span>
+            </div>
+           </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card"  data-aos="fade-down" data-aos-duration="1300">
+          <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/classes03.png" alt="Card image"><span class="blue-clr">yp</span></a>
+           <div class="card-body">
+           <small class="price01">$10</small>
+           <p class="card-text mb-2">Business, Personal Development, Popular...</p>
+             <h5 class="card-title"><a href="#">Professionalism: Dress the Part</a></h5>
+            <div class="d-flex align-items-center client-info">
+                <img src="images/alan.png" alt="">
+                 <span class="client-name">Alan Levy</span>
+                <span class="timer"><img src="images/timer.png" alt=""> 6 min</span>
+            </div>
+           </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- More suggestions end -->
+
+</main>
+
+<!-- footer section Start -->
+<footer class="footer" style="background-image: url(images/strip-img.png);">
+    <div class="container-fluid">
+        <div class="row">
+         <div class="col-lg-4 col-md-4">
+            <div class="footer_info">
+              <a href="index.html"><img src="images/footer-logo.png" alt=""></a>
+              <p class="mt-4">Epee Education is an e-learning platform for students and young professionals to fill the gap between academics and the real world</p>
+
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4">
+          <div class="footer_link">
+            <h4>Links</h4>
+            <div class="d-flex justify-content-between">
+              <ul class="list-unstyled">
+                <li><a href="#">Become A Member</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#"> Privacy Policy</a></li>
+              </ul>
+              <ul class="list-unstyled">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-lg-4 col-md-4">
+          <div class="footer_link end-ftr">
+            <h4>Contact Us</h4>
+            <p><a href="mailto:admin@epee-education.com">admin@epee-education.com</a><br>
+            <a href="mailto:hello@epee-education.com">hello@epee-education.com</a><br>
+            <b><a href="tel:01234567889">01234567889</a></b>
+          </p>
+
+          </div>
+         </div>
+        </div>
+        <div class="ftr-btm">
+          <div class="row">
+            <div class="col-lg-4">
+              <p class="copy_right">© Epee 2021. All rights reserved.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="footer_social">
+                <a href="javascript"><i class="fa fa-facebook-official"></i></a>
+                <a href="javascript"><i class="fa fa-linkedin-square"></i></a>
+                <a href="javascript"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <p class="copy_right">Feel free to contact us for any questions!</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</footer>
+
+<!-- footer section Close -->
+
+<!-- back top button -->
+<div class="back-top"><a href="javascript:void(0)"><i class="fa fa-angle-up"></i></a></div>
+
+<!-- <script src="https://raw.github.com/vimeo/player-api/master/javascript/froogaloop.js"></script> -->
+
+<script src="js/jquery.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+  $(".video_list").mCustomScrollbar({
+  theme:"dark"
+});
+</script>
+
+
+
+
+</body>
+</html>

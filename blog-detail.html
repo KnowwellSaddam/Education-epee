@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Epee Education</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="images/fev.png" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- Navigation Section -->
+<header class="site-header">        
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light btm-line">
+     <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"><img class="img-fluid" src="images/site-logo.svg" alt=""></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li clas="navbar-item">
+              <a href="#" class="nav-link">Classes</a>
+              </li>
+              <li clas="navbar-item">
+                <a href="about-us.html" class="nav-link">About Us</a>
+                </li>
+              <li clas="navbar-item">
+                <a href="#" class="nav-link">Pricing & FAQ</a>
+            </li>  
+            <li clas="navbar-item">
+                <a href="#" class="nav-link">For Business</a>
+            </li>
+            <li clas="navbar-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+        
+          </ul>
+          <form class="navbar-form form-inline">
+			<div class="input-group search-box">
+                <div class="input-group-append">
+					<span class="input-group-text"><img src="images/search.png" alt=""></span>
+				</div>								
+				<input type="text" id="search" class="form-control" placeholder="Search">
+                <a href="#" class="shop-cart"><img src="images/cart.png" alt=""> Cart </a>
+			</div>
+           
+		</form>
+
+        <div class="navbar-nav action-buttons ml-auto">
+			<a href="#" data-toggle="modal" data-target="#login" class="nav-item nav-link mr-4">Login</a>
+			<a href="#" data-toggle="modal" data-target="#register"  class="nav-item nav-link">Get Started</a>			
+		</div>
+        </div> 
+     </div>
+    </nav>                                           
+</header>
+
+<!-- login form -->
+
+<div class="modal custom-form fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="images/close.png" alt="">
+          </button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="Username">Username</label>
+              <input type="text" class="form-control" id="Username">
+            </div>
+            <div class="form-group">
+              <label for="password1">Password</label>
+              <input type="password" class="form-control" id="password1">
+            </div>
+          </div>
+          <div class="modal-footer border-top-0 d-block justify-content-center">
+            <button type="submit" class="btn btn-success">Login</button>
+                <a href="#" class="forgot_pass">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal custom-form fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Sign up and start Learning! <span>Fill in your profile so we can recommend classes for you.</span></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="images/close.png" alt="">
+          </button>
+        </div>
+        <form>
+          <div class="modal-body row">
+            <div class="form-group col-md-6">
+              <label for="first-name">First name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="last-name">Last name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="last-name">Current situation*</label>
+                <select class="gfield_select">
+                    <option value="high-school-student">High School Student</option>
+                    <option value="university-student">University Student</option>
+                    <option value="young-professional">Young Professional</option>
+                    <option value="professional">Experienced Professional</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Graduation-year">Graduation year</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-12">
+                <label for="School-Name">School Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Location">Location</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="State">State / Province</label>
+                <input type="text" class="form-control">
+              </div>
+          </div>
+          <div class="modal-footer border-top-0 d-block justify-content-center">
+            <button type="submit" class="btn btn-success">Sign up for free</button>
+                <a href="#" class="forgot_pass">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<main>
+<!-- Cover Banner start -->
+<section class="inner-banner presenter-banner h-circle">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 ">
+               <div class="site-title"  data-aos="fade-right" data-aos-duration="1000">
+                <h1>Blog Details </h1>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Cover Banner end -->
+
+
+<section class="section blog-wrapper">
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8">
+          <div class="blog_cart blog_info">
+            <figure class="mb-4"><img src="images/blog-item01.jpg" alt="Blog image"></figure>
+            <a href="#" class="blog-link">Bussiness</a> <span><i class="fa fa-calendar-o"></i>  April 10,2021</span>
+           <h3  data-aos="fade-up" data-aos-duration="1000">Perspective on the GameStop Stock Manipulation Situation</h3>
+           <div data-aos="fade-up" data-aos-duration="1200">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum risus, congue cras id eget quisque eu tortor. Scelerisque mi tristique lectus posuere in. Felis viverra urna id nulla purus enim. In quam orci duis a malesuada quisque molestie at ullamcorper. Senectus id dolor enim id integer. Feugiat sit integer ac elementum, sit facilisis turpis ornare quam. Leo non volutpat eu ipsum nam accumsan. Nulla feugiat porta erat vulputate nullam ac non morbi.</p>
+            <p>Consectetur adipiscing elit. Sed dictum risus, congue cras id eget quisque eu tortor. Scelerisque mi tristique lectus posuere in. Felis viverra urna id nulla purus enim. In quam orci duis a malesuada quisque molestie at ullamcorper. Senectus id dolor enim id integer. Feugiat sit integer ac elementum, sit facilisis turpis ornare quam. Leo non volutpat eu ipsum nam accumsan. Nulla feugiat porta erat vulputate nullam ac non morbi.</p>
+            <p>Aenean et egestas nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce gravida, ligula non molestie tristique, justo elit blandit risus, blandit maximus augue magna accumsan ante. Duis id mi tristique, pulvinar neque at, lobortis tortor.</p>
+            <p>See ‘How you study’ to find out more. It’s no surprise JavaScript continues to be a top language, as it powers the web applications we use every day. What’s impressive is the constant improvements to JavaScript that enable developers to continue to innovate and thrive in the web application world. All major front-end frameworks are written in JavaScript or a language that produces JavaScript to run. Usage of frameworks like Backbones.js are declining and being replaced by UI work done directly in Angular, React and Vue, while emerging tools.
+            </p>
+           </div>
+            <div class="social_link">
+                <span>Share </span>
+                <a href="javascript:void(0)"><i class="fa fa-facebook-square"></i></a>
+                <a href="javascript:void(0)"><i class="fa fa-linkedin-square"></i></a>
+                <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+            </div>
+            <h3>Comments</h3>
+            <div class="recent_blog admin_comment">
+              <span><img src="images/dr-kavin.png" alt=""></span>
+              <div class="recent_blog_info">
+                  <h5>Admin
+                  </h5>
+                  <h6>March 10,2021</h6>
+                  <p>We realised we really wanted to catch a glimpse of what went on behind the scenes of the companies we looked up to. And we thought other people would want to know too.</p>
+                  <a href="#"><img src="images/reply.png" alt="reply"> Reply</a>
+                </div>
+           </div>
+
+           <div class="blog_form">
+            <form action="">
+              <h4>Leave a comment</h4>
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <input type="text" placeholder="Name" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group col-lg-12">
+                 <textarea placeholder="Comment"></textarea>
+                </div>
+                <div class="form-group col-lg-6">
+                 <button type="submit" class="btn site-btn">Post Your Comment</button>
+                </div>
+              </div>
+            </form>
+           </div>
+
+          </div>  
+        </div>
+
+        <div class="col-lg-4">
+            <div class="blog_cat">
+             <h4>Categories</h4>
+             <ul class="list-unstyled">
+                 <li><a href="#">Bussiness</a></li>
+                 <li><a href="#">Finance</a></li>
+                 <li><a href="#">Personal Growth</a></li>
+                 <li><a href="#">Communication</a></li>
+             </ul>
+             <h4>Recent posts</h4>
+
+             <div class="recent_blog">
+                <span><img src="images/kevin.png" alt=""></span>
+                <div class="recent_blog_info">
+                    <h5>Are Outbound Links Important For SEO?
+                    </h5>
+                    <p>March 10,2021</p>
+                </div>
+             </div>
+             <div class="recent_blog">
+                <span><img src="images/kevin.png" alt=""></span>
+                <div class="recent_blog_info">
+                    <h5>Are Outbound Links Important For SEO?
+                    </h5>
+                    <p>March 10,2021</p>
+                </div>
+             </div>
+             <div class="recent_blog">
+                <span><img src="images/kevin.png" alt=""></span>
+                <div class="recent_blog_info">
+                    <h5>Are Outbound Links Important For SEO?
+                    </h5>
+                    <p>March 10,2021</p>
+                </div>
+             </div> 
+            </div>  
+        </div>
+       
+    </div>
+ </div>
+</section>
+
+<!-- Email section start -->
+<section class="mail_us_section">
+ <div class="strip-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-6 col-sm-6">
+        <div class="site-heading" data-aos="fade-up" data-aos-duration="1500" >
+          <h3 class="mb-0">Keep Connection,<br>
+            Subscribe Now!</h3>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-6 col-sm-6">
+        <div class="mail-sec" data-aos="fade-up" data-aos-duration="1600">
+          <h4>Enter Your Email Address</h4>
+          <form action="" class="d-flex">
+            <input type="text" placeholder="Email Address">
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+<!-- Email section end -->
+</main>
+
+<!-- footer section Start -->
+<footer class="footer" style="background-image: url(images/strip-img.png);">
+    <div class="container-fluid">
+        <div class="row">
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1300">
+            <div class="footer_info">
+              <a href="index.html"><img src="images/footer-logo.png" alt=""></a>
+              <p class="mt-4">Epee Education is an e-learning platform for students and young professionals to fill the gap between academics and the real world</p>
+              <p class="copy_right">© Epee 2021. All rights reserved.</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1400">
+          <div class="footer_link">
+            <h4>Links</h4>
+            <div class="d-flex justify-content-between">
+              <ul class="list-unstyled">
+                <li><a href="#">Become A Member</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#"> Privacy Policy</a></li>
+              </ul>
+              <ul class="list-unstyled">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1500">
+          <div class="footer_link end-ftr">
+            <h4>Contact Us</h4>
+            <p><a href="mailto:admin@epee-education.com">admin@epee-education.com</a><br>
+            <a href="mailto:hello@epee-education.com">hello@epee-education.com</a><br>
+            <b><a href="tel:01234567889">01234567889</a></b>
+          </p>
+          <p class="copy_right">Feel free to contact us for any questions!</p>
+          </div>
+         </div>
+        </div>
+        <div class="ftr-btm">
+          
+        </div>
+    </div>
+</footer>
+       
+<!-- footer section Close -->
+
+<!-- back top button -->
+<div class="back-top"><a href="javascript:void(0)"><i class="fa fa-angle-up"></i></a></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>

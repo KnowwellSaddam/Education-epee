@@ -1,0 +1,253 @@
+body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    overflow-x: hidden;
+    font-size: 18px;
+    font-weight:400;
+    font-family: 'Rubik';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.container-fluid{padding: 0 4%;}
+figure{margin: 0px;}
+
+/*--------------------------
+font-family: 'Source Sans Pro';
+
+----------------------------*/
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-BoldItalic.woff') format('woff'),
+  url('../fonts/SourceSansPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold; font-style: italic; font-display: swap;}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Bold.woff') format('woff'),
+  url('../fonts/SourceSansPro-Bold.ttf') format('truetype'); 
+  font-weight: bold; font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-BlackItalic.woff') format('woff'),
+  url('../fonts/SourceSansPro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;font-style: italic;font-display: swap;}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Black.woff') format('woff'),
+  url('../fonts/SourceSansPro-Black.ttf') format('truetype');
+  font-weight: 900;font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-ExtraLight.woff') format('woff'),
+  url('../fonts/SourceSansPro-ExtraLight.ttf') format('truetype');
+  font-weight: 200;font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Light.woff') format('woff'),
+  url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+  font-weight: 300;font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+  url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-SemiBoldItalic.woff') format('woff'),
+  url('../fonts/SourceSansPro-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;font-style: italic;font-display: swap;}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-SemiBold.woff') format('woff'),
+  url('../fonts/SourceSansPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;font-style: normal;font-display: swap;}
+
+
+/* Rubik fonts */
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Bold.woff') format('woff'),
+  url('../fonts/Rubik-Bold.ttf') format('truetype');
+  font-weight: bold;font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-BlackItalic.woff') format('woff'),
+  url('../fonts/Rubik-BlackItalic.ttf') format('truetype');
+  font-weight: 900;font-style: italic;font-display: swap;}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Black.woff') format('woff'),
+  url('../fonts/Rubik-Black.ttf') format('truetype');
+  font-weight: 900;font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Italic.woff') format('woff'),
+  url('../fonts/Rubik-Italic.ttf') format('truetype');
+  font-weight: normal; font-style: italic; font-display: swap;}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-ExtraBold.woff') format('woff'),
+  url('../fonts/Rubik-ExtraBold.ttf') format('truetype');
+  font-weight: 800;font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-BoldItalic.woff') format('woff'),
+  url('../fonts/Rubik-BoldItalic.ttf') format('truetype');
+  font-weight: bold; font-style: italic; font-display: swap;}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Medium.woff') format('woff'),
+  url('../fonts/Rubik-Medium.ttf') format('truetype');
+  font-weight: 500;font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Light.woff') format('woff'),
+  url('../fonts/Rubik-Light.ttf') format('truetype');
+  font-weight: 300;font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Regular.woff') format('woff'),
+  url('../fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: normal;font-style: normal;font-display: swap;}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-SemiBold.woff') format('woff'),
+  url('../fonts/Rubik-SemiBold.ttf') format('truetype');
+  font-weight: 600; font-style: normal; font-display: swap;}
+
+article,aside,details,figcaption,
+figure,footer,header,hgroup,
+menu,nav,
+section { display: block;}
+a{transition: all 0.3s linear;}
+
+/*========================
+  form fill section
+======================== */
+textarea {height: 110px; resize: none; }
+.form-control,select,
+textarea,input[type="text"],input[type="email"],
+input[type="password"] {border-radius: 0;box-shadow: none;-moz-box-shadow: none;
+-webkit-appearance: none;-webkit-box-shadow: none;padding: 14px 15px;font-size: 18px;
+height: auto;width: 100%;line-height: normal;color: #000;
+border: 0px;outline: none;-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;
+-o-appearance: none;appearance: none;}
+
+input[type="submit"],
+input[type="button"] {  cursor: pointer;  -webkit-appearance: none;}
+
+::-webkit-input-placeholder {opacity: 1; }
+::-moz-placeholder {opacity: 1; }
+::-ms-placeholder {opacity: 1; }
+::-o-input-placeholder {opacity: 1; }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { color: #fff !important;}
+.form-control::placeholder{color: #fff;}
+input::-moz-placeholder,
+textarea::-moz-input-placeholder { color: #fff !important;}
+
+input::-ms-placeholder,
+textarea::-ms-input-placeholder {color: #fff !important;}
+
+input::-o-input-placeholder,
+textarea::-o-input-placeholder {color: #fff !important;}
+
+/*-------------------------------------
+         Typography 
+-------------------------------------*/
+h1, h2, h3, h4, h5, h6 { margin: 0px; font-family: 'Source Sans Pro'; font-weight: 700;}
+h6{font-size: 20px; }
+
+h1 {font-size: 70px; margin-bottom: 25px;line-height: 1.1;}
+h2 {font-size: 41px; margin-bottom: 25px; color: #000; }
+h3 {font-size: 40px; margin-bottom: 25px; color: #000; }
+h4{font-size: 25px; margin-bottom: 15px; }
+h5{font-size:20px;  margin-bottom: 30px;}
+p {margin-bottom: 25px; line-height:1.4; font-size: 18px; color: #000; font-family: 'Rubik';}
+a{ color: #000; }
+
+.navbar,.navbar-right,img{-webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -ms-transition: all 0.4s linear; transition: all 0.4s linear;}
+.section {padding:60px 0;}
+.section h1, .section h2, .section h3 { line-height: 1.1; }
+
+a img{ display: inline-block; vertical-align: middle;}
+ul{padding-left: 0; margin-bottom: 0;}
+.btm-brdr h3 , .btm-brdr h2{padding-bottom: 20px; position: relative;}
+.btm-brdr h3::before , .btm-brdr h2::before{content: ''; position: absolute; left: 0; width: 60px; bottom: 0; height: 4px; background-color:#3e36c5 ; border-radius: 6px;}
+.btm-brdr h2::before{left: 0; right: 0; margin: 0 auto;}
+
+.btm-line{border-bottom: 1px solid #3FC264;}
+
+.img-figure figure img,
+.navbar-default .navbar-nav li:before,
+a,.pull-right ,.nav-tabs>li>a {transition: all 0.3 ease; -webkit-transition: all 0.3 ease; -o-transition: all 0.3 ease; 
+-moz-transition: all 0.3 ease; -ms-transition: all 0.3 ease; color: inherit; }
+
+a {color: #188873; text-decoration: none; }
+a:hover, a:focus {color: #188873; text-decoration: none; }
+img { border: none; vertical-align: top; max-width: 100%; height: auto; }
+img:focus {outline: none; }
+.clear {clear: both; }
+
+.site-header .navbar-brand{transition: all 0.4s linear; width: 140px;}
+.site-header .navbar-brand img{ transition: all 0.4s linear; width: 100%;}
+
+/*----------- button --------------*/
+.btn{ border:0px; transition: all 0.4s linear; position: relative;
+display: inline-block;padding:14px 40px; font-size: 20px !important;color:#fff;border-radius: 7px;text-transform: capitalize;
+-webkit-appearance: none;-webkit-appearance: none;-moz-appearance: none;-o-appearance: none; border:2px solid transparent;
+-ms-appearance: none;appearance: none; position: relative; z-index: 3; overflow: hidden; font-family: 'Rubik'; font-weight: 400;}
+.btn:hover,.btn:focus{outline: none; box-shadow: 0px 0px 0px;}
+
+.btn:before, .btn:after {width: 100%;height: 0;position: absolute;top: 50%;left: 50%;
+z-index: -1;content: '';opacity: 1;-webkit-transition: all 0.5s linear;
+-moz-transition: all 0.5s linear;-ms-transition: all 0.5s linear;transition: all 0.5s linear;}
+
+.btn:before {
+-webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+-ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+transform: translateX(-50%) translateY(-50%) rotate(-45deg);}
+
+.btn:after {
+-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+transform: translateX(-50%) translateY(-50%) rotate(45deg);}
+
+.btn:hover:before{ height: 115%; opacity: 1; background: rgba(255, 255, 255, 0.2);}
+.btn:hover:after { height: 115%; opacity: 1; background: rgba(255, 255, 255, 0.2);}
+
+.btn:hover{background-color: #3FC264; color: #fff;}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none; border: 0px;background-color: transparent;
+  outline: 0px auto -webkit-focus-ring-color;outline-offset: 0px;}

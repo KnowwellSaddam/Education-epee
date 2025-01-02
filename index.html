@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Epee Education</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="images/fev.png" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- Navigation Section -->
+<header class="site-header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+     <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"><img class="img-fluid" src="images/site-logo.svg" alt=""></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li clas="navbar-item">
+              <a href="#" class="nav-link">Classes</a>
+              </li>
+              <li clas="navbar-item">
+                <a href="about-us.html" class="nav-link">About Us</a>
+                </li>
+              <li clas="navbar-item">
+                <a href="#" class="nav-link">Pricing & FAQ</a>
+            </li>
+            <li clas="navbar-item">
+                <a href="#" class="nav-link">For Business</a>
+            </li>
+
+          </ul>
+          <form class="navbar-form form-inline">
+			<div class="input-group search-box">
+                <div class="input-group-append">
+					<span class="input-group-text"><img src="images/search.png" alt=""></span>
+				</div>
+				<input type="text" id="search" class="form-control" placeholder="Search">
+                <a href="#" class="shop-cart"><img src="images/cart.png" alt=""> Cart </a>
+			</div>
+
+		</form>
+
+        <div class="navbar-nav action-buttons ml-auto">
+			<a href="#" data-toggle="modal" data-target="#login" class="nav-item nav-link mr-4">Login</a>
+			<a href="#" data-toggle="modal" data-target="#register"  class="nav-item nav-link">Get Started</a>
+		</div>
+        </div>
+     </div>
+    </nav>
+</header>
+
+<!-- login form -->
+
+<div class="modal custom-form fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="images/close.png" alt="">
+          </button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="Username">Username</label>
+              <input type="text" class="form-control" id="Username">
+            </div>
+            <div class="form-group">
+              <label for="password1">Password</label>
+              <input type="password" class="form-control" id="password1">
+            </div>
+          </div>
+          <div class="modal-footer border-top-0 d-block justify-content-center">
+            <button type="submit" class="btn btn-success">Login</button>
+                <a href="#" class="forgot_pass">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal custom-form fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Sign up and start Learning! <span>Fill in your profile so we can recommend classes for you.</span></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="images/close.png" alt="">
+          </button>
+        </div>
+        <form>
+          <div class="modal-body row">
+            <div class="form-group col-md-6">
+              <label for="first-name">First name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="last-name">Last name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="last-name">Current situation*</label>
+                <select class="gfield_select">
+                    <option value="high-school-student">High School Student</option>
+                    <option value="university-student">University Student</option>
+                    <option value="young-professional">Young Professional</option>
+                    <option value="professional">Experienced Professional</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Graduation-year">Graduation year</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-12">
+                <label for="School-Name">School Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Location">Location</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="State">State / Province</label>
+                <input type="text" class="form-control">
+              </div>
+          </div>
+          <div class="modal-footer border-top-0 d-block justify-content-center">
+            <button type="submit" class="btn btn-success">Sign up for free</button>
+                <a href="#" class="forgot_pass">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<main>
+<!-- Cover Banner start -->
+<section class="cover-banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="cover-text">
+                    <h1 data-aos="fade-down" data-aos-duration="1000"><span>Keep Learning</span> Learn What Schools <br>Never Teach!!</h1>
+                    <p data-aos="fade-down" data-aos-duration="1300">We close the gap between academics and the real world by enabling professionals to share their ACTUAL experience. Learn anytime and anywhere from the people who have already lived it!</p>
+                   <div data-aos="fade-right" data-aos-duration="1600">
+                    <a href="#" class="btn btn-site">Our Courses</a> <a href="#" class="btn btn-default">Join For Free</a>
+                   </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="cover-img">
+                   <figure data-aos="fade-left" data-aos-duration="1700"><img class="img-fluid" src="images/mock.png" alt=""></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Cover Banner end -->
+
+<!-- Course steps start -->
+<section class="course_step">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1000">
+                <div class="media align-items-center" data-aos="zoom-out">
+                    <img class="d-flex mr-3" src="images/Per-Courses.svg" alt="">
+                    <div class="media-body">
+                      <h5 class="m-0">Personalized Courses</h5>
+                     <p> Build YOUR curriculum around YOUR needs.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1200">
+                <div class="media align-items-center" data-aos="zoom-out">
+                    <img class="d-flex mr-3" src="images/star.svg" alt="">
+                    <div class="media-body">
+                      <h5 class="m-0">Full Access Membership</h5>
+                     <p>First Month Free Trial, then continue for less than $1 per day!</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1400">
+                <div class="media align-items-center" data-aos="zoom-out">
+                    <img class="d-flex mr-3" src="images/group.svg" alt="">
+                    <div class="media-body">
+                      <h5 class="m-0">Personal Development Courses</h5>
+                     <p> Personal finances, running effective meetings, insurance, leadership and team building skills.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Courses steps end -->
+
+<!-- Popular classes start -->
+<section class="section popular_classes">
+    <div class="container-fluid">
+        <div class="site-heading" >
+            <h2 class="mb-1" data-aos="fade-down" data-aos-duration="800">Popular Classes</h2>
+            <p data-aos="fade-down" data-aos-duration="900">Faucibus at egestas placerat donec leo, posuere at eget pretium proin.  <a href="#" class="pull-right" ><img class="move-img" src="images/download-arrow.png" alt=""> Browse All Classes</a></p>
+        </div>
+        <div class="responsive" data-aos="fade-down" data-aos-duration="1000">
+            <div class="card">
+               <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/classes01.png" alt="Card image"><span class="orng-clr">HS</span></a>
+                <div class="card-body">
+                <small class="price01">$5</small>
+                <p class="card-text mb-2">Business , Introduction , Personal Development...</p>
+                  <h5 class="card-title"><a href="#">Landing your First Job. Professional Tools, Recruiting, Getting it Right</a></h5>
+                 <div class="d-flex align-items-center client-info">
+                     <img src="images/circle-img01.png" alt="">
+                      <span class="client-name">Megan Kelly</span>
+                     <span class="timer"><img src="images/timer.png" alt=""> 90 min</span>
+                 </div>
+                </div>
+            </div>
+            <div class="card">
+               <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/classes02.png" alt="Card image"><span class="orng-clr">HS</span></a>
+                <div class="card-body">
+                <small class="price01">$5</small>
+                <p class="card-text mb-2">Business , Entrepreneurship , Popular , Project...</p>
+                  <h5 class="card-title"><a href="#">Pursuing Success in Life and Your Career</a></h5>
+                 <div class="d-flex align-items-center client-info">
+                     <img src="images/alan01.png" alt="">
+                      <span class="client-name">Alan Levy</span>
+                     <span class="timer"><img src="images/timer.png" alt=""> 30 min</span>
+                 </div>
+                </div>
+            </div>
+            <div class="card">
+               <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/classes03.png" alt="Card image"><span class="blue-clr">yp</span></a>
+                <div class="card-body">
+                <small class="price01">$5</small>
+                <p class="card-text mb-2">Business , Personal Development , Popular ...</p>
+                  <h5 class="card-title"><a href="#">Professionalism: Dress the Part</a></h5>
+                 <div class="d-flex align-items-center client-info">
+                     <img src="images/Eleanor01.png" alt="">
+                      <span class="client-name">Eleanor Small</span>
+                     <span class="timer"><img src="images/timer.png" alt=""> 6 min</span>
+                 </div>
+                </div>
+            </div>
+            <div class="card">
+               <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/classes04.png" alt="Card image"><span class="red-clr">pro</span></a>
+                <div class="card-body">
+                <small class="price01">$5</small>
+                <p class="card-text mb-2">Business , Engineering , Personal Development...</p>
+                  <h5 class="card-title"><a href="#">Talking to your Boss when you're Overloaded</a></h5>
+                 <div class="d-flex align-items-center client-info">
+                     <img src="images/Headshot01.png" alt="">
+                      <span class="client-name">Headshot</span>
+                     <span class="timer"><img src="images/timer.png" alt=""> 3 min</span>
+                 </div>
+                </div>
+            </div>
+            <div class="card">
+               <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/classes05.png" alt="Card image"><span class="orng-clr">HS</span></a>
+                <div class="card-body">
+                <small class="price01">$5</small>
+                <p class="card-text mb-2">Business , Introduction , Personal Development...</p>
+                  <h5 class="card-title"><a href="#">Landing your First Job. Professional Tools, Recruiting, Getting it Right</a></h5>
+                 <div class="d-flex align-items-center client-info">
+                     <img src="images/Fern01.png" alt="">
+                      <span class="client-name">Fern Headshot</span>
+                     <span class="timer"><img src="images/timer.png" alt=""> 20 min</span>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Popular classes end -->
+
+<!-- Our client start -->
+<section class="section our_client_section" data-aos="fade-down" data-aos-duration="1500">
+  <div class="container-fluid">
+    <div class="site-heading">
+      <h3>Presenters</h3>
+    </div>
+    <div class="our-clients">
+      <div class="card-item">
+        <figure><img src="images/Jonathan-2015Headshot.jpg" alt=""></figure>
+        <strong>Jonathan Cameron CFP®</strong>
+        <p>Founder & Principal, CameronDowning, Inc.</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Eleanor-Small.jpg" alt=""></figure>
+        <strong>Dr. Eleanor Small</strong>
+        <p>PhD, Johnson & Johnson, Principal Scientist</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Teresa-Whitney.jpg" alt=""></figure>
+        <strong>Teresa Whitney, Ph.D.</strong>
+        <p>GlaxoSmithKline (GSK), Workplace Design & Change Manager</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Steven-Jacobs.jpg" alt=""></figure>
+        <strong>Steven Jacobs</strong>
+        <p>Global BioPharm Solutions, President</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Tom-Bell.jpg" alt=""></figure>
+        <strong>Tom Bell</strong>
+        <p>Vertex Labs, CEO / Co-Founder</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Alan-Levy.jpg" alt=""></figure>
+        <strong>Alan Levy</strong>
+        <p>Epee Education, Founder / President</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Kevin-Cuthill.jpg" alt=""></figure>
+        <strong>Kevin Cuthill, CFP®, AAMS®</strong>
+        <p>Edward Jones, Financial Planner</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Megan-Kelly.jpg" alt=""></figure>
+        <strong>Megan Kelly</strong>
+        <p>Mace Group, Director of Recruiting</p>
+      </div>
+
+      <div class="card-item">
+        <figure><img src="images/Paul-Falding.jpg" alt=""></figure>
+        <strong>Paul Falding</strong>
+        <p>Turner & Townsend, Sr Project Controls Manager</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Kevin-Headshot.jpg" alt=""></figure>
+        <strong>Dr. Kevin Bukatman</strong>
+        <p>Founder & President of College Planning Service America</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Michael-Asher.jpg" alt=""></figure>
+        <strong>Michael Asher, PMP, CPM</strong>
+        <p>Senior Project Manager, CRB</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Conway-Headshot.jpg" alt=""></figure>
+        <strong>Lisa Conway, LEED®AP ID+C</strong>
+        <p>VP, Sustainability - Americas Interface</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Headshot.jpg" alt=""></figure>
+        <strong>Michael Browning</strong>
+        <p>Owner, Allstate Insurance Agency</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Oluwaseun-picture.jpg" alt=""></figure>
+        <strong>Oluwaseun Adebayo-Omoju</strong>
+        <p>Head of Business Development, Autusbridge Consulting</p>
+      </div>
+
+      <div class="card-item">
+        <figure><img src="images/NGB-Headshot.jpg" alt=""></figure>
+        <strong>Nicholas Bucci CFP®</strong>
+        <p>Financial Advisor, BLBB Advisors</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Phil-Gonski.jpg" alt=""></figure>
+        <strong>Philip Gonski, PE</strong>
+        <p>Burns Engineering, Sr. Project Manager</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Emilie-Pelletier.jpg" alt=""></figure>
+        <strong>Emilie Pelletier, PE</strong>
+        <p>Iovance Biotherapeutics, Sr. Director of Process Engineering</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Austin-Hodge.jpg" alt=""></figure>
+        <strong>Austin Hodge</strong>
+        <p>Genesis Engineers, Director of Project Controls</p>
+      </div>
+      <div class="card-item">
+        <figure><img src="images/Fern-Headshot.jpg" alt=""></figure>
+        <strong>Fern Gookin, LEED AP</strong>
+        <p>Director of Sustainability, Revolution Recovery</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Our client end -->
+
+<!-- More industries start -->
+<section class="more_industries">
+  <div class="container-fluid">
+    <div class="site-heading" data-aos="fade-down" data-aos-duration="1200">
+      <strong>Browse By</strong>
+      <h3>Industries <a href="#" class="pull-right"><img class="move-img" src="images/download-arrow02.png" alt=""> View All</a></h3>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-duration="900">
+        <div class="industries_boxes">
+          <span class="svg-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M47.9928 15.6317C47.9928 11.6287 46.469 7.62598 43.421 4.57837C40.4682 1.62598 36.5425 0 32.3666 0C28.1907 0 24.2649 1.62598 21.3121 4.57837L2.49034 29.3654C-1.09743 33.8708 -0.808493 40.4689 3.35899 44.6356C5.59837 46.875 8.54014 47.9945 11.4819 47.9945C11.5486 47.9945 11.6152 47.9934 11.6815 47.9923V48H41.1062V47.9956C44.8653 47.9044 47.9045 44.8656 47.9957 41.1072H48.0001V15.6317H47.9928ZM23.3021 6.56836C25.7231 4.14734 28.9425 2.81396 32.3666 2.81396C35.7906 2.81396 39.01 4.14734 41.431 6.56836C46.4294 11.566 46.4294 19.6974 41.431 24.6951C39.01 27.1161 35.7906 28.4495 32.3666 28.4495C28.9425 28.4495 25.7231 27.1161 23.3021 24.6951C18.3041 19.6974 18.3041 11.566 23.3021 6.56836ZM5.34898 42.646C1.96739 39.2648 1.96739 33.7628 5.34898 30.3816C7.04014 28.6908 9.26048 27.8456 11.4819 27.8456C13.7026 27.8456 15.9241 28.6912 17.6148 30.3816C20.9964 33.7628 20.9964 39.2648 17.6148 42.646C14.2329 46.0272 8.73057 46.0272 5.34898 42.646ZM40.933 45.186C38.5877 45.186 36.6798 43.2784 36.6798 40.9336C36.6798 38.5887 38.5877 36.6812 40.933 36.6812C43.2778 36.6812 45.1858 38.5887 45.1858 40.9336C45.1858 43.2784 43.2778 45.186 40.933 45.186ZM45.1858 35.2943C44.0014 34.3993 42.5282 33.8672 40.933 33.8672C37.0357 33.8672 33.8655 37.0371 33.8655 40.9336C33.8655 42.5288 34.3976 44.0017 35.2926 45.186H19.0138C19.2156 45.0106 19.4129 44.8275 19.6048 44.6356C24.0836 40.1572 24.0836 32.8704 19.6048 28.392C16.7597 25.5472 12.782 24.5101 9.10996 25.2792L16.7477 15.1831C16.6294 19.3341 18.1506 23.5236 21.3121 26.6847C24.2649 29.6371 28.191 31.2634 32.3666 31.2634C36.5425 31.2634 40.4686 29.6375 43.4214 26.6847C44.0809 26.0251 44.669 25.3206 45.1858 24.5812V35.2943Z" fill="#3FC264"/>
+              <path d="M25.2074 15.6416V15.6317C25.2074 14.376 25.5366 13.1415 26.1599 12.0612C26.5481 11.3881 26.3174 10.5278 25.6439 10.1397C24.9708 9.75112 24.1102 9.98219 23.722 10.6553C22.8527 12.1622 22.3931 13.8831 22.3931 15.6317V15.6416C22.3931 16.4187 23.0229 17.0486 23.8004 17.0486C24.5775 17.0486 25.2074 16.4187 25.2074 15.6416Z" fill="#3FC264"/>
+              <path d="M35.9477 21.8316C34.8663 22.4578 33.6293 22.7893 32.3706 22.79C31.5935 22.7904 30.964 23.4206 30.9644 24.1977C30.9647 24.9744 31.5946 25.604 32.3717 25.604H32.3724C34.1251 25.6029 35.8489 25.1403 37.358 24.2666C38.0308 23.8773 38.2604 23.0167 37.8707 22.344C37.4814 21.6716 36.6205 21.442 35.9477 21.8316Z" fill="#3FC264"/>
+              <path d="M28.7923 21.8353C27.705 21.2076 26.7975 20.302 26.168 19.2158C25.7784 18.5438 24.917 18.3149 24.2447 18.7046C23.5723 19.0942 23.3434 19.9552 23.7334 20.6275C24.6094 22.1382 25.8721 23.3987 27.3846 24.2721C27.6065 24.4002 27.8482 24.461 28.087 24.461C28.5733 24.461 29.0464 24.2087 29.3068 23.7575C29.6957 23.0844 29.465 22.2242 28.7923 21.8353Z" fill="#3FC264"/>
+              <path d="M39.5256 15.6119V15.6317C39.5256 16.8904 39.1949 18.1274 38.569 19.2092C38.1801 19.882 38.4101 20.7426 39.0828 21.1315C39.3044 21.26 39.5468 21.3208 39.786 21.3208C40.2719 21.3208 40.7443 21.0688 41.0055 20.618C41.8785 19.1085 42.3399 17.3844 42.3399 15.6317V15.6119C42.3399 14.8348 41.71 14.205 40.9329 14.205C40.1555 14.205 39.5256 14.8348 39.5256 15.6119Z" fill="#3FC264"/>
+              <path d="M28.0727 9.62659C28.3125 9.62659 28.5557 9.56506 28.778 9.43579C29.859 8.80847 31.0957 8.47559 32.354 8.47339C33.1311 8.47229 33.7603 7.84131 33.7588 7.06421C33.7574 6.28784 33.1278 5.65942 32.3518 5.65942C32.3511 5.65942 32.35 5.65942 32.3493 5.65942C30.5966 5.66235 28.8732 6.12671 27.3648 7.00232C26.6928 7.3927 26.4643 8.25366 26.8547 8.92566C27.1158 9.37537 27.5878 9.62659 28.0727 9.62659Z" fill="#3FC264"/>
+              <path d="M35.9336 9.42373C37.0212 10.0503 37.9298 10.9549 38.5608 12.0403C38.8219 12.4896 39.2936 12.7405 39.7785 12.7405C40.0187 12.7405 40.2618 12.6786 40.4845 12.5493C41.1561 12.159 41.3843 11.2976 40.9935 10.626C40.1157 9.11611 38.8516 7.85708 37.3384 6.9855C36.6646 6.59768 35.8043 6.82913 35.4165 7.50222C35.0287 8.17568 35.2601 9.03591 35.9336 9.42373Z" fill="#3FC264"/>
+              <path d="M32.3665 20.0951C34.8281 20.0951 36.8306 18.0926 36.8306 15.6317C36.8306 13.1704 34.8281 11.1683 32.3665 11.1683C29.9048 11.1683 27.9023 13.1704 27.9023 15.6317C27.9023 18.0926 29.9048 20.0951 32.3665 20.0951ZM32.3665 13.9823C33.2761 13.9823 34.0162 14.722 34.0162 15.6317C34.0162 16.541 33.2761 17.2811 32.3665 17.2811C31.4568 17.2811 30.7167 16.541 30.7167 15.6317C30.7167 14.722 31.4568 13.9823 32.3665 13.9823Z" fill="#3FC264"/>
+              <path d="M11.4819 32.0504C9.02026 32.0504 7.01782 34.0529 7.01782 36.5138C7.01782 38.9751 9.02063 40.9772 11.4819 40.9772C13.9432 40.9772 15.946 38.9751 15.946 36.5138C15.946 34.0529 13.9432 32.0504 11.4819 32.0504ZM11.4819 38.1632C10.5723 38.1632 9.83215 37.4235 9.83215 36.5138C9.83215 35.6045 10.5723 34.8644 11.4819 34.8644C12.3916 34.8644 13.1317 35.6045 13.1317 36.5138C13.1317 37.4235 12.3916 38.1632 11.4819 38.1632Z" fill="#3FC264"/>
+              <path d="M40.9327 39.0575C40.1553 39.0575 39.5254 39.6874 39.5254 40.4645V41.4027C39.5254 42.1798 40.1553 42.8097 40.9327 42.8097C41.7098 42.8097 42.3397 42.1798 42.3397 41.4027V40.4645C42.3397 39.6874 41.7098 39.0575 40.9327 39.0575Z" fill="#3FC264"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="48" height="48" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </span>
+          <h5 class="mb-1">Automotive</h5>
+          <p><a href="#">35 Classes</a> </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="industries_boxes">
+          <span class="svg-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34.98 36H32.1675V40H34.98V36Z" fill="#F2994A"/>
+              <path d="M40.2957 36H37.4832V40H40.2957V36Z" fill="#F2994A"/>
+              <path d="M34.98 27H32.1675V31H34.98V27Z" fill="#F2994A"/>
+              <path d="M40.2957 27H37.4832V31H40.2957V27Z" fill="#F2994A"/>
+              <path d="M34.98 18H32.1675V22H34.98V18Z" fill="#F2994A"/>
+              <path d="M40.2957 18H37.4832V22H40.2957V18Z" fill="#F2994A"/>
+              <path d="M40.2957 9H37.4832V13H40.2957V9Z" fill="#F2994A"/>
+              <path d="M19.4419 36H16.6294V40H19.4419V36Z" fill="#F2994A"/>
+              <path d="M24.7576 36H21.9451V40H24.7576V36Z" fill="#F2994A"/>
+              <path d="M19.4419 27H16.6294V31H19.4419V27Z" fill="#F2994A"/>
+              <path d="M24.7576 27H21.9451V31H24.7576V27Z" fill="#F2994A"/>
+              <path d="M24.7576 18H21.9451V22H24.7576V18Z" fill="#F2994A"/>
+              <path d="M45.4063 45.1875V0H37.5337L29.845 8.05434H21.996L11.5186 19.0303V45.1875H6.60938V42.2116C8.79712 41.5964 10.4062 39.5848 10.4062 37.2032C10.4062 34.3342 8.07216 32.0001 5.20312 32.0001C2.33409 32.0001 0 34.3341 0 37.2031C0 39.5848 1.60912 41.5964 3.79688 42.2115V45.1875H0V48H48V45.1875H45.4063ZM2.8125 37.2031C2.8125 35.8849 3.88491 34.8125 5.20312 34.8125C6.52134 34.8125 7.59375 35.8849 7.59375 37.2031C7.59375 38.5213 6.52134 39.5937 5.20312 39.5937C3.88491 39.5937 2.8125 38.5214 2.8125 37.2031ZM27.0563 45.1875H14.3311V20.1572L23.1995 10.8668H27.0563V45.1875ZM42.5938 45.1875H29.8688V12.1028L38.737 2.8125H42.5938V45.1875Z" fill="#F2994A"/>
+              </svg>
+          </span>
+          <h5 class="mb-1">Buildings and<br>
+            Infrastructure</h5>
+          <p><a href="#"> 35 Classes</a></p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-duration="1100">
+        <div class="industries_boxes">
+          <span class="svg-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M23.9999 15.848C21.1567 15.848 18.8435 18.1611 18.8435 21.0044C18.8435 23.3601 20.432 25.3504 22.5936 25.9643V42.0051C22.5936 42.7818 23.2233 43.4114 23.9999 43.4114C24.7766 43.4114 25.4062 42.7818 25.4062 42.0051V25.9643C27.5679 25.3505 29.1564 23.3601 29.1564 21.0044C29.1564 18.1611 26.8432 15.848 23.9999 15.848ZM23.9999 23.3482C22.7075 23.3482 21.6561 22.2968 21.6561 21.0044C21.6561 19.712 22.7075 18.6606 23.9999 18.6606C25.2923 18.6606 26.3438 19.712 26.3438 21.0044C26.3438 22.2968 25.2923 23.3482 23.9999 23.3482Z" fill="#2F80ED"/>
+              <path d="M17.4941 13.4859C16.945 12.9367 16.0547 12.9367 15.5054 13.4859C11.1454 17.8457 11.1447 24.9033 15.5054 29.2638C16.0547 29.813 16.9449 29.813 17.4941 29.2638C18.0434 28.7147 18.0434 27.8242 17.4941 27.275C14.2334 24.0143 14.2328 18.7359 17.4941 15.4747C18.0434 14.9255 18.0434 14.0351 17.4941 13.4859Z" fill="#2F80ED"/>
+              <path d="M32.4947 13.4859C31.9456 12.9368 31.0551 12.9368 30.5059 13.4859C29.9567 14.035 29.9567 14.9255 30.5059 15.4747C33.7592 18.7281 33.7592 24.0216 30.5059 27.275C29.9567 27.8241 29.9567 28.7146 30.5059 29.2638C31.0552 29.813 31.9455 29.813 32.4947 29.2638C36.8448 24.9139 36.8448 17.8358 32.4947 13.4859Z" fill="#2F80ED"/>
+              <path d="M13.2513 11.2319C13.8005 10.6828 13.8005 9.79234 13.2513 9.24313C12.7021 8.69402 11.8117 8.69402 11.2625 9.24313C4.57299 15.9326 4.57299 26.8171 11.2625 33.5066C11.8115 34.0557 12.702 34.056 13.2513 33.5066C13.8005 32.9575 13.8005 32.067 13.2513 31.5178C7.6585 25.9249 7.6585 16.8248 13.2513 11.2319Z" fill="#2F80ED"/>
+              <path d="M36.7374 9.24313C36.1882 8.69402 35.2978 8.69402 34.7486 9.24313C34.1994 9.79225 34.1994 10.6827 34.7486 11.2319C40.3413 16.8248 40.3413 25.9249 34.7486 31.5178C34.1994 32.0669 34.1994 32.9574 34.7486 33.5066C35.2979 34.0558 36.1882 34.0558 36.7374 33.5066C43.4269 26.8171 43.4269 15.9326 36.7374 9.24313Z" fill="#2F80ED"/>
+              <path d="M9.00851 6.98912C9.55772 6.44001 9.55772 5.54954 9.00851 5.00034C8.4594 4.45122 7.56893 4.45122 7.01972 5.00034C-2.35008 14.37 -2.32973 28.3999 7.01972 37.7494C7.56874 38.2985 8.45921 38.2988 9.00851 37.7494C9.55772 37.2003 9.55772 36.3098 9.00851 35.7606C0.807441 27.5593 0.807441 15.1904 9.00851 6.98912Z" fill="#2F80ED"/>
+              <path d="M40.9803 5.00034C40.4312 4.45122 39.5407 4.45122 38.9915 5.00034C38.4423 5.54945 38.4423 6.43992 38.9915 6.98912C47.1928 15.1904 47.1928 27.5593 38.9915 35.7606C38.4423 36.3097 38.4423 37.2002 38.9915 37.7494C39.5408 38.2986 40.4311 38.2986 40.9803 37.7494C50.35 28.3798 50.3298 14.3498 40.9803 5.00034Z" fill="#2F80ED"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="48" height="48" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </span>
+          <h5 class="mb-1">Communications</h5>
+          <p><a href="#"> 35 Classes</a></p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-duration="1200">
+        <div class="industries_boxes">
+          <span class="svg-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M43.7812 1.5H4.21875C1.89258 1.5 0 3.39258 0 5.71875V33.8438C0 36.1699 1.89258 38.0625 4.21875 38.0625H16.4238L14.5488 43.6875H9.9375C9.16077 43.6875 8.53125 44.317 8.53125 45.0938C8.53125 45.8705 9.16077 46.5 9.9375 46.5H38.0625C38.8392 46.5 39.4688 45.8705 39.4688 45.0938C39.4688 44.317 38.8392 43.6875 38.0625 43.6875H33.4512L31.5762 38.0625H43.7812C46.1074 38.0625 48 36.1699 48 33.8438V5.71875C48 3.39258 46.1074 1.5 43.7812 1.5ZM17.5137 43.6875L19.3887 38.0625H28.6113L30.4863 43.6875H17.5137ZM45.1875 33.8438C45.1875 34.619 44.5565 35.25 43.7812 35.25C39.6954 35.25 8.34705 35.25 4.21875 35.25C3.44348 35.25 2.8125 34.619 2.8125 33.8438V32.4375H45.1875V33.8438ZM15.3354 21.5427L14.0563 20.2639L16.0448 18.275L17.324 19.5542C17.7773 20.0076 18.4801 20.0969 19.0327 19.771C19.823 19.3052 20.6667 18.954 21.5402 18.7277C22.1605 18.5673 22.5938 18.0073 22.5938 17.3665V15.5625H25.4062V17.3665C25.4062 18.0073 25.8395 18.5673 26.4598 18.7277C27.3329 18.954 28.1766 19.3052 28.9669 19.7714C29.5195 20.0969 30.2223 20.0076 30.6757 19.5542L31.9548 18.275L33.9437 20.2639L32.6646 21.5431C32.2112 21.9965 32.1218 22.6992 32.4478 23.2515C32.9139 24.0421 33.2648 24.8859 33.4911 25.7589C33.6515 26.3793 34.2114 26.8125 34.8523 26.8125H36.6562V29.625H30.8892C30.9829 29.1643 31.0312 28.693 31.0312 28.2188C31.0312 24.3417 27.8771 21.1875 24 21.1875C20.1229 21.1875 16.9688 24.3417 16.9688 28.2188C16.9688 28.693 17.0171 29.1643 17.1108 29.625H11.3438V26.8125H13.1477C13.7886 26.8125 14.3485 26.3793 14.5093 25.7589C14.7352 24.8859 15.0864 24.0421 15.5522 23.2515C15.8778 22.6992 15.7888 21.9965 15.3354 21.5427ZM28.2188 28.2188C28.2188 28.7003 28.1353 29.176 27.9771 29.625H20.0229C19.8647 29.176 19.7812 28.7003 19.7812 28.2188C19.7812 25.8926 21.6738 24 24 24C26.3262 24 28.2188 25.8926 28.2188 28.2188ZM45.1875 29.625H39.4688V25.4062C39.4688 24.6295 38.8392 24 38.0625 24H35.8901C35.7444 23.5913 35.577 23.1896 35.3888 22.7959L36.9269 21.2582C37.4758 20.7089 37.4758 19.8186 36.9265 19.2693L32.9491 15.2919C32.6854 15.0282 32.3276 14.8802 31.9548 14.8802C31.582 14.8802 31.2242 15.0282 30.9606 15.2919L29.4229 16.83C29.0292 16.6417 28.6274 16.4744 28.2188 16.329V14.1562C28.2188 13.3795 27.5892 12.75 26.8125 12.75H21.1875C20.4108 12.75 19.7812 13.3795 19.7812 14.1562V16.329C19.3726 16.4744 18.9708 16.6417 18.5771 16.83L17.0394 15.2919C16.7758 15.0282 16.418 14.8802 16.0452 14.8802C15.672 14.8802 15.3146 15.0282 15.0505 15.2919L11.0735 19.2693C10.5242 19.8186 10.5242 20.7089 11.0735 21.2582L12.6112 22.7963C12.423 23.1896 12.256 23.5913 12.1102 24H9.9375C9.16077 24 8.53125 24.6299 8.53125 25.4062V29.625H2.8125V5.71875C2.8125 4.94348 3.44348 4.3125 4.21875 4.3125H43.7812C44.5565 4.3125 45.1875 4.94348 45.1875 5.71875V29.625Z" fill="#FF0000"/>
+              <path d="M38.0625 7.125C35.7363 7.125 33.8438 9.01758 33.8438 11.3438C33.8438 13.6699 35.7363 15.5625 38.0625 15.5625C40.3887 15.5625 42.2812 13.6699 42.2812 11.3438C42.2812 9.01758 40.3887 7.125 38.0625 7.125ZM38.0625 12.75C37.2872 12.75 36.6562 12.119 36.6562 11.3438C36.6562 10.5685 37.2872 9.9375 38.0625 9.9375C38.8378 9.9375 39.4688 10.5685 39.4688 11.3438C39.4688 12.119 38.8378 12.75 38.0625 12.75Z" fill="#FF0000"/>
+              </svg>
+          </span>
+          <h5 class="mb-1">Computers and <br>
+            Automation</h5>
+          <p><a href="#">35 Classes</a> </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-duration="1300">
+        <div class="industries_boxes">
+          <span class="svg-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M45.1875 34.0856V29.625C45.1875 24.9949 43.6945 20.594 40.87 16.8982C38.3629 13.6176 34.8964 11.1016 31.026 9.73163C30.9183 7.50066 29.0697 5.71875 26.8125 5.71875H21.1875C18.9303 5.71875 17.0817 7.50066 16.974 9.73163C13.1036 11.1016 9.63713 13.6176 7.12997 16.8982C4.30547 20.594 2.8125 24.9949 2.8125 29.625V34.0856C1.17572 34.6661 0 36.2292 0 38.0625C0 40.3887 1.89253 42.2812 4.21875 42.2812H43.7812C46.1075 42.2812 48 40.3887 48 38.0625C48 36.2292 46.8243 34.6661 45.1875 34.0856ZM5.625 29.625C5.625 24.554 7.79119 19.8068 11.3438 16.4198V21.1875C11.3438 21.9641 11.9734 22.5938 12.75 22.5938C13.5266 22.5938 14.1562 21.9641 14.1562 21.1875V14.2141C15.0424 13.6484 15.9822 13.1549 16.9688 12.7442V24C16.9688 24.7766 17.5984 25.4062 18.375 25.4062C19.1516 25.4062 19.7812 24.7766 19.7812 24V10.7749C19.7813 10.771 19.7812 10.7672 19.7812 10.7633V9.9375C19.7812 9.16209 20.4121 8.53125 21.1875 8.53125H26.8125C27.5879 8.53125 28.2188 9.16209 28.2188 9.9375V10.763C28.2188 10.767 28.2187 10.7709 28.2188 10.775V24C28.2188 24.7766 28.8484 25.4062 29.625 25.4062C30.4016 25.4062 31.0312 24.7766 31.0312 24V12.7442C32.0178 13.155 32.9576 13.6485 33.8438 14.2141V21.1875C33.8438 21.9641 34.4734 22.5938 35.25 22.5938C36.0266 22.5938 36.6562 21.9641 36.6562 21.1875V16.4198C40.2088 19.8068 42.375 24.554 42.375 29.625V33.8438H5.625V29.625ZM43.7812 39.4688H4.21875C3.44334 39.4688 2.8125 38.8379 2.8125 38.0625C2.8125 37.2871 3.44334 36.6562 4.21875 36.6562H43.7812C44.5567 36.6562 45.1875 37.2871 45.1875 38.0625C45.1875 38.8379 44.5567 39.4688 43.7812 39.4688Z" fill="#4C4ACD"/>
+              </svg>
+          </span>
+          <h5 class="mb-1">Construction</h5>
+          <p><a href="#"> 35 Classes</a></p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-duration="1400">
+        <div class="industries_boxes">
+          <span class="svg-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M44.7216 18.0788C45.2201 16.7751 45.3248 15.3363 44.9995 13.959C44.615 12.3307 43.687 10.934 42.3511 9.94744C42.3605 8.06794 41.6277 6.27347 40.2732 4.91897C38.9242 3.57 37.1419 2.83641 35.2741 2.83641C35.2619 2.83641 35.2495 2.83641 35.2373 2.8365C33.9185 1.06753 31.8408 0 29.625 0C27.3274 0 25.2839 1.10794 24 2.81737C22.7161 1.10794 20.6726 0 18.375 0C16.1592 0 14.0815 1.06753 12.7628 2.8365C10.8779 2.82881 9.08456 3.56119 7.72678 4.91897C6.37228 6.27347 5.63963 8.06784 5.64891 9.94744C4.31297 10.934 3.38503 12.3307 3.00047 13.959C2.67516 15.3363 2.77978 16.7751 3.27844 18.0788C1.27003 19.347 0 21.5693 0 24C0 26.4307 1.26994 28.653 3.27844 29.9212C2.77988 31.2249 2.67516 32.6636 3.00038 34.0407C3.38494 35.6688 4.3125 37.0653 5.64797 38.0518C5.63616 39.7739 6.24422 41.4096 7.40419 42.7337C8.77031 44.2931 10.7187 45.1875 12.75 45.1875C12.7603 45.1875 12.7705 45.1875 12.7807 45.1874C14.1003 46.9421 16.1693 48 18.375 48C20.6726 48 22.7161 46.8921 24 45.1826C25.2839 46.8921 27.3274 48 29.625 48C31.8307 48 33.8997 46.9421 35.2193 45.1874C35.2295 45.1875 35.2397 45.1875 35.25 45.1875C37.2813 45.1875 39.2297 44.2931 40.5958 42.7337C41.7558 41.4096 42.3638 39.774 42.352 38.0518C43.6875 37.0653 44.6151 35.6688 44.9996 34.0407C45.3248 32.6636 45.2202 31.2249 44.7216 29.9212C46.7301 28.653 48 26.4307 48 24C48 21.5693 46.73 19.347 44.7216 18.0788ZM22.5938 14.1562H19.7812V11.3438H16.9688V16.9688H22.5938V22.5938H14.1562V19.7812H11.3438V28.2188H14.1562V25.4062H22.5938V32.4375H16.9688V38.0625H19.7812V35.25H22.5938V40.9688C22.5938 43.295 20.7012 45.1875 18.375 45.1875C16.8699 45.1875 15.4677 44.356 14.7157 43.0177L14.249 42.1871C12.7713 42.3866 12.8311 42.375 12.75 42.375C11.5292 42.375 10.3518 41.8302 9.51966 40.8803C8.69794 39.9424 8.33578 38.7446 8.49994 37.5078L8.62528 36.5634L7.79484 36.0968C6.73987 35.504 6.00919 34.5441 5.73759 33.3941C5.46863 32.2556 5.69081 31.0464 6.34706 30.0768L7.37063 28.5644L5.64694 27.9612C3.95156 27.3682 2.8125 25.7762 2.8125 24C2.8125 22.2238 3.95156 20.6318 5.64694 20.0386L7.37053 19.4354L6.34706 17.9231C5.69081 16.9535 5.46872 15.7443 5.73769 14.6055C6.00928 13.4557 6.73987 12.496 7.79484 11.9032L8.62528 11.4365L8.49994 10.4921C8.3235 9.16313 8.76666 7.85663 9.7155 6.90769C10.6674 5.95575 11.9756 5.511 13.3046 5.68734L14.249 5.81269L14.7157 4.98225C15.4677 3.64388 16.8699 2.8125 18.375 2.8125C20.7012 2.8125 22.5938 4.70503 22.5938 7.03125V14.1562ZM42.3532 27.9614L40.6295 28.5646L41.653 30.077C42.3093 31.0466 42.5315 32.2557 42.2625 33.3943C41.9909 34.5443 41.2603 35.5042 40.2052 36.0969L39.3748 36.5636L39.5002 37.508C39.6643 38.7447 39.3022 39.9425 38.4804 40.8805C37.6482 41.8302 36.4708 42.375 35.25 42.375C35.1511 42.375 35.1718 42.3789 33.751 42.1871L33.2843 43.0177C32.5323 44.356 31.1301 45.1875 29.625 45.1875C27.2988 45.1875 25.4062 43.295 25.4062 40.9688V35.25H28.2188V38.0625H31.0312V32.4375H25.4062V25.4062H33.8438V28.2188H36.6562V19.7812H33.8438V22.5938H25.4062V16.9688H31.0312V11.3438H28.2188V14.1562H25.4062V7.03125C25.4062 4.70503 27.2988 2.8125 29.625 2.8125C31.1301 2.8125 32.5323 3.64388 33.2843 4.98234L33.751 5.81278L34.6954 5.68744C36.0242 5.511 37.3326 5.95584 38.2845 6.90778C39.2334 7.85672 39.6765 9.16322 39.5001 10.4922L39.3747 11.4366L40.2052 11.9032C41.2601 12.496 41.9907 13.4557 42.2623 14.6056C42.5313 15.7444 42.3092 16.9536 41.6529 17.9232L40.6295 19.4356L42.3531 20.0388C44.0484 20.6318 45.1875 22.2238 45.1875 24C45.1875 25.7762 44.0484 27.3682 42.3532 27.9614Z" fill="#00C7BF"/>
+            </svg>
+          </span>
+          <h5 class="mb-1">Data and Artificial<br>
+            Intelligence</h5>
+          <p><a href="#"> 35 Classes</a></p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-duration="1500">
+        <div class="industries_boxes">
+          <span class="svg-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M45.2432 41.3001C44.1595 36.9651 40.2324 33.9375 35.6934 33.9375H29.6249V32.4147C32.9849 30.4505 35.2499 26.7839 35.2499 22.5938V12.6524C36.9566 11.3683 38.0624 9.32662 38.0624 7.03125C38.0624 3.15422 34.9082 0 31.0312 0C30.604 0 30.1753 0.0388125 29.7567 0.115406L14.5433 2.90494C11.8745 3.39422 9.93744 5.721 9.93744 8.4375C9.93744 10.5149 11.0703 12.3316 12.7499 13.3057V22.5938C12.7499 26.7839 15.0149 30.4505 18.3749 32.4147V33.9375H12.3065C7.78129 33.9375 3.85429 37.0037 2.75675 41.3938L1.54204 46.2527C1.43694 46.6728 1.53135 47.1179 1.79788 47.4592C2.06432 47.8005 2.47316 48 2.90619 48H45.0937C45.5256 48 45.9336 47.8015 46.2002 47.4616C46.4668 47.1217 46.5624 46.6782 46.4595 46.2587L45.2432 41.3001ZM19.2313 37.8824L21.3154 43.4401L16.4524 40.6613L19.2313 37.8824ZM28.7686 37.8824L31.5475 40.6613L26.6845 43.4401L28.7686 37.8824ZM15.0505 5.67131L30.2635 2.88188C30.5151 2.83584 30.7734 2.8125 31.0312 2.8125C33.3574 2.8125 35.2499 4.70503 35.2499 7.03125C35.2499 9.35747 33.3574 11.25 31.0312 11.25H27.9768C28.1329 10.8098 28.2187 10.3367 28.2187 9.84375C28.2187 7.51753 26.3262 5.625 23.9999 5.625C21.6737 5.625 19.7812 7.51753 19.7812 9.84375C19.7812 10.3367 19.867 10.8098 20.0231 11.25H15.5624C14.0116 11.25 12.7499 9.98831 12.7499 8.4375C12.7499 7.07906 13.7174 5.91572 15.0505 5.67131ZM22.5937 9.84375C22.5937 9.06834 23.2245 8.4375 23.9999 8.4375C24.7753 8.4375 25.4062 9.06834 25.4062 9.84375C25.4062 10.6192 24.7753 11.25 23.9999 11.25C23.2245 11.25 22.5937 10.6192 22.5937 9.84375ZM31.0312 14.0625C31.5127 14.0625 31.9829 14.0137 32.4374 13.921V22.4358C31.4209 22.2111 30.4886 21.7751 29.5186 21.3205C27.9796 20.599 26.2353 19.7812 23.9999 19.7812C21.7646 19.7812 20.0203 20.599 18.4813 21.3204C17.5113 21.7751 16.579 22.211 15.5624 22.4357V14.0625H31.0312ZM15.973 25.2228C17.3794 24.9412 18.5806 24.3801 19.6751 23.8671C21.0718 23.2122 22.3911 22.5938 23.9999 22.5938C25.6088 22.5938 26.928 23.2122 28.3249 23.8671C29.4193 24.3801 30.6205 24.9412 32.027 25.2228C30.9282 28.6444 27.7454 31.125 23.9999 31.125C20.2544 31.125 17.0717 28.6444 15.973 25.2228ZM23.9999 33.9375C24.9707 33.9375 25.9132 33.8128 26.8124 33.5785V35.0887L23.9999 42.5887L21.1874 35.0887V33.5785C22.0867 33.8128 23.0292 33.9375 23.9999 33.9375ZM5.48516 42.0759C6.26919 38.9401 9.07419 36.75 12.3065 36.75H16.3863L13.1619 39.9744C12.8519 40.2844 12.7042 40.7211 12.7624 41.1555C12.8205 41.5898 13.078 41.9723 13.4585 42.1898L18.7047 45.1875H4.70732L5.48516 42.0759ZM29.2952 45.1875L34.5414 42.1897C34.9219 41.9723 35.1793 41.5897 35.2375 41.1554C35.2957 40.721 35.1479 40.2843 34.838 39.9743L31.6137 36.75H35.6935C38.9396 36.75 41.7446 38.9016 42.5132 41.9761L43.3008 45.1875H29.2952Z" fill="#F2C94C"/>
+              </svg>
+          </span>
+          <h5 class="mb-1">Defense/Military</h5>
+          <p><a href="#"> 35 Classes</a></p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-duration="1600">
+        <div class="industries_boxes">
+          <span class="svg-icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+              <path d="M23.9999 0C14.918 0 7.5293 7.38871 7.5293 16.4706C7.5293 22.4477 10.7199 27.592 15.5293 30.4707V33.8824H12.7058V36.7059H15.5293V42.3529H18.3528V48H29.6469V42.3529H32.4705V36.7059H35.294V33.8824H32.4705V30.4707C37.2837 27.5897 40.4705 22.4431 40.4705 16.4706C40.4705 7.38871 33.0818 0 23.9999 0V0ZM26.8234 45.1765H21.1764V42.3529H26.8234V45.1765ZM29.6469 39.5294H18.3528V36.7059H29.6469V39.5294ZM18.3528 33.8824V31.0588H29.6469V33.8824H18.3528ZM19.935 15.8116L22.5881 12.4952V16.9412H25.4116V12.4952L28.0648 15.8116L25.8059 22.5882H22.194L19.935 15.8116ZM22.5881 25.4118H25.4116V28.2353H22.5881V25.4118ZM30.6946 28.2353H28.2352V24.2292L31.2291 15.2472L23.9999 6.21064L16.7706 15.2472L19.7646 24.2292V28.2353H17.3052C13.0085 25.8152 10.3528 21.339 10.3528 16.4706C10.3528 8.9456 16.4749 2.82353 23.9999 2.82353C31.5249 2.82353 37.6469 8.9456 37.6469 16.4706C37.6469 21.339 34.9912 25.8152 30.6946 28.2353Z" fill="#A03FC2"/>
+              <path d="M38.3555 3.24109L41.3498 0.246736L43.3461 2.24297L40.3517 5.23732L38.3555 3.24109Z" fill="#A03FC2"/>
+              <path d="M4.64502 31.6409L7.63931 28.6466L9.63554 30.6429L6.64126 33.6371L4.64502 31.6409Z" fill="#A03FC2"/>
+              <path d="M43.7646 15.5294H47.9999V18.353H43.7646V15.5294Z" fill="#A03FC2"/>
+              <path d="M0 15.5294H4.23529V18.353H0V15.5294Z" fill="#A03FC2"/>
+              <path d="M38.3525 30.6464L40.3488 28.6501L43.3431 31.6444L41.3468 33.6406L38.3525 30.6464Z" fill="#A03FC2"/>
+              <path d="M4.64795 2.23914L6.64418 0.2429L9.63854 3.23725L7.6423 5.23349L4.64795 2.23914Z" fill="#A03FC2"/>
+              </g>
+              <defs>
+              <clipPath id="clip0">
+              <rect width="48" height="48" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </span>
+          <h5 class="mb-1">Education</h5>
+          <p><a href="#"> 35 Classes</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row btm_title">
+      <div class="col-lg-5 col-md-6" data-aos="fade-right" data-aos-duration="1800">
+        <div class="trial">
+          <h3>NEW:  1 Month Free Trial!</h3>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-6" data-aos="fade-left" data-aos-duration="1900">
+        <div class="trial-text">
+        <h5 class="mb-1">With unlimited access to our library, you can FINALLY learn the real-world topics that schools never teach!</h5>
+        <p>Fill in your free profile and Epee will suggest the best courseses for you!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- More industries end -->
+
+<!-- Individual Courses start -->
+<section class="individual_Courses">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-right" data-aos-duration="1800">
+        <div class="light-green two-clmn" data-aos="zoom-out">
+          <span>Individual Courses</span>
+          <strong><sup>$</sup> 0-20</strong>
+          <h5>Epee Education Will Never Be Wealth Dependent!!</h5>
+          <ul class="list-unstyled">
+            <li> Select topics of greatest interest</li>
+            <li>Most classes are 30-60 minutes</li>
+            <li>$10 per hour of content</li>
+            <li>Watch on-demand from our ever-growing library</li>
+          </ul>
+          <a href="#" class="btn">Go To Class List</a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-left" data-aos-duration="2000">
+        <div class="light-gray two-clmn" data-aos="zoom-out">
+          <span>Monthly Subscription</span>
+          <strong><sup>$</sup> 25</strong>
+          <h5>Less Than $1 Per Day!!</h5>
+          <h4>New: 1 Month Free Trial</h4>
+          <ul class="list-unstyled">
+            <li>Epee Membership provides open-access to the library</li>
+            <li>Click to View - No Delays, No Expiration</li>
+            <li>After trial, still less than $1 per day</li>
+            <li>Most cost effective solution</li>
+          </ul>
+          <p>Excludes content only for experienced professionals</p>
+          <a href="#" class="btn">Get Monthly Subscription</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Individual Courses end -->
+
+<!-- our_client_section start -->
+<section class="section our_client_section">
+  <div class="container-fluid">
+    <div class="client_testimonial">
+      <div class="site-heading" data-aos="fade-up" data-aos-duration="2400">
+        <h3>People Love Us<br>
+          and Our Strategies</h3>
+      </div>
+<!-- Testimonial slider -->
+      <div class="testimonial" data-aos="fade-right" data-aos-duration="2500">
+        <div class="testi_info">
+          <p>“I believe when I showed up on my first day of employment, I basically knew nothing. College teaches you the theory and some of the application of how items operate in the power industry, but many of the calculated methods at University relied on antiquated equipment and analysis.”</p>
+          <div class="d-flex align-items-center">
+            <img src="images/client-img01.png" alt="">
+            <h5 class="mb-0">
+              Philip Gonski
+              <span>Sr. Project Manager - Burns Engineering</span>
+            </h5>
+          </div>
+        </div>
+        <div class="testi_info">
+          <p>"Our academic classes help us learn the fundamentals of engineering, and supposedly group projects teach us to “work with others.” What school did not teach me was how to lead by influence, especially when some of my colleagues are peers or out rank me."</p>
+          <div class="d-flex align-items-center">
+            <img src="images/client-img02.png" alt="">
+            <h5 class="mb-0">
+              Dr. Eleanor Small
+              <span>Principal Scientist - Johnson & Johnson</span>
+            </h5>
+          </div>
+        </div>
+        <div class="testi_info">
+          <p>“I believe when I showed up on my first day of employment, I basically knew nothing. College teaches you the theory and some of the application of how items operate in the power industry, but many of the calculated methods at University relied on antiquated equipment and analysis.”</p>
+          <div class="d-flex align-items-center">
+            <img src="images/client-img01.png" alt="">
+            <h5 class="mb-0">
+              Philip Gonski
+              <span>Sr. Project Manager - Burns Engineering</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- our_client_section end -->
+
+<!-- Meeting partner start -->
+<section class="meeting_partner">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <figure class="conf-img">
+          <img src="images/meeting01.png" alt="" data-aos="fade-up" data-aos-duration="2100">
+          <img src="images/meeting02.png" alt="" data-aos="zoom-in" data-aos-duration="2200">
+        </figure>
+      </div>
+      <div class="col-lg-6 col-md-6">
+       <div class="meeting_info">
+        <h3 data-aos="fade-down" data-aos-duration="2300">Want To Partner With Epee?</h3>
+        <p data-aos="fade-down" data-aos-duration="2400">Dapibus sollicitudin id cras quis gravida. Tortor sagittis tortor ut feugiat vulputate tur pis malesuada varius. Adipiscing interdum convallis blandit eget aenean enim acnor. Amet, vitae interdum faucibus egestas donec tincidunt non. Risus sagittis ridiculus id libero. Sit quis vitae, fusce lacus, phasellus.</p>
+        <div class="d-flex" data-aos="fade-down" data-aos-duration="2500">
+          <div class="flex-clm">
+            <img src="images/presentation.png" alt="">
+            <strong>Lorem Ipsum Sit</strong>
+            <p>Aliquet vitae orci ut leo egestas interdum id convallis fringilla.</p>
+          </div>
+          <div class="flex-clm">
+            <img src="images/lecture.png" alt="">
+            <strong>Consequet Dolor Elit</strong>
+            <p>Euismod morbi ac rhoncus commodo amet, ut sit ullamcorper.</p>
+          </div>
+        </div>
+        <h5 data-aos="fade-up" data-aos-duration="2500">Offer our professional training at your institute or organization.<br>
+         <a href="mailto:admin@epee-education.com">admin@epee-education.com</a></h5>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Meeting partner end -->
+
+<!-- Email section start -->
+<section class="mail_us_section">
+ <div class="strip-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-6 col-sm-6">
+        <div class="site-heading" data-aos="fade-up" data-aos-duration="1500" >
+          <h3 class="mb-0">Keep Connection,<br>
+            Subscribe Now!</h3>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-6 col-sm-6">
+        <div class="mail-sec" data-aos="fade-up" data-aos-duration="1600">
+          <h4>Enter Your Email Address</h4>
+          <form action="" class="d-flex">
+            <input type="text" placeholder="Email Address">
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+<!-- Email section end -->
+</main>
+
+<!-- footer section Start -->
+<footer class="footer" style="background-image: url(images/strip-img.png);">
+    <div class="container-fluid">
+        <div class="row">
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1300">
+            <div class="footer_info">
+              <a href="index.html"><img src="images/footer-logo.png" alt=""></a>
+              <p class="mt-4">Epee Education is an e-learning platform for students and young professionals to fill the gap between academics and the real world</p>
+              <p class="copy_right">© Epee 2021. All rights reserved.</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1400">
+          <div class="footer_link">
+            <h4>Links</h4>
+            <div class="d-flex justify-content-between">
+              <ul class="list-unstyled">
+                <li><a href="#">Become A Member</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#"> Privacy Policy</a></li>
+              </ul>
+              <ul class="list-unstyled">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1500">
+          <div class="footer_link end-ftr">
+            <h4>Contact Us</h4>
+            <p><a href="mailto:admin@epee-education.com">admin@epee-education.com</a><br>
+            <a href="mailto:hello@epee-education.com">hello@epee-education.com</a><br>
+            <b><a href="tel:01234567889">01234567889</a></b>
+          </p>
+          <p class="copy_right">Feel free to contact us for any questions!</p>
+          </div>
+         </div>
+        </div>
+        <div class="ftr-btm">
+
+        </div>
+    </div>
+</footer>
+
+<!-- footer section Close -->
+
+<!-- back top button -->
+<div class="back-top"><a href="javascript:void(0)"><i class="fa fa-angle-up"></i></a></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>

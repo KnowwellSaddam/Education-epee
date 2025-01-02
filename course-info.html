@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Epee Education</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="images/fev.png" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- Navigation Section -->
+<header class="site-header">        
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light btm-line">
+     <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"><img class="img-fluid" src="images/site-logo.svg" alt=""></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li clas="navbar-item">
+              <a href="#" class="nav-link">Classes</a>
+              </li>
+              <li clas="navbar-item">
+                <a href="about-us.html" class="nav-link">About Us</a>
+                </li>
+              <li clas="navbar-item">
+                <a href="#" class="nav-link">Pricing & FAQ</a>
+            </li>  
+            <li clas="navbar-item">
+                <a href="#" class="nav-link">For Business</a>
+            </li>
+        
+          </ul>
+          <form class="navbar-form form-inline">
+			<div class="input-group search-box">
+                <div class="input-group-append">
+					<span class="input-group-text"><img src="images/search.png" alt=""></span>
+				</div>								
+				<input type="text" id="search" class="form-control" placeholder="Search">
+                <a href="#" class="shop-cart"><img src="images/cart.png" alt=""> Cart </a>
+			</div>
+           
+		</form>
+
+        <div class="navbar-nav action-buttons ml-auto">
+			<a href="#" data-toggle="modal" data-target="#login" class="nav-item nav-link mr-4">Login</a>
+			<a href="#" data-toggle="modal" data-target="#register"  class="nav-item nav-link">Get Started</a>			
+		</div>
+        </div> 
+     </div>
+    </nav>                                           
+</header>
+
+<!-- login form -->
+
+<div class="modal custom-form fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="images/close.png" alt="">
+          </button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="Username">Username</label>
+              <input type="text" class="form-control" id="Username">
+            </div>
+            <div class="form-group">
+              <label for="password1">Password</label>
+              <input type="password" class="form-control" id="password1">
+            </div>
+          </div>
+          <div class="modal-footer border-top-0 d-block justify-content-center">
+            <button type="submit" class="btn btn-success">Login</button>
+                <a href="#" class="forgot_pass">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal custom-form fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Sign up and start Learning! <span>Fill in your profile so we can recommend classes for you.</span></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="images/close.png" alt="">
+          </button>
+        </div>
+        <form>
+          <div class="modal-body row">
+            <div class="form-group col-md-6">
+              <label for="first-name">First name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="last-name">Last name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="last-name">Current situation*</label>
+                <select class="gfield_select">
+                    <option value="high-school-student">High School Student</option>
+                    <option value="university-student">University Student</option>
+                    <option value="young-professional">Young Professional</option>
+                    <option value="professional">Experienced Professional</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Graduation-year">Graduation year</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-12">
+                <label for="School-Name">School Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Location">Location</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="State">State / Province</label>
+                <input type="text" class="form-control">
+              </div>
+          </div>
+          <div class="modal-footer border-top-0 d-block justify-content-center">
+            <button type="submit" class="btn btn-success">Sign up for free</button>
+                <a href="#" class="forgot_pass">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<main>
+<!-- Cover Banner start -->
+<section class="inner-banner presenter-banner">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-9 col-md-6">
+              <div class="row">
+                <div class="col-md-5"  data-aos="fade-right" data-aos-duration="1000">
+                    <figure class="financ-img" data-aos="zoom-out" data-aos-duration="700"><img src="images/curse-img.jpg" alt=""></figure>
+                </div>
+                <div class="col-md-7"  data-aos="fade-right" data-aos-duration="1200">
+                   <div class="card-sec">
+                    <h2>College Financial Aid - What you don't know can cost you tens of thousands of dollars!</h2>
+                    <p>College Prep , Personal Finances , Popular</p>
+                    <div class="d-flex align-items-center client-info">
+                        <img src="images/kevin.png" alt="">
+                         <span class="client-name">Dr. Kevin Bukatman</span>
+                        <span class="timer"><img src="images/timer01.png" alt=""> 60 min</span>
+                    </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="btn-groups" data-aos="fade-right" data-aos-duration="1400">
+                   <span class="price-txt">$20</span>
+                    <a href="#" class="btn  btn-white">Add to Cart</a>
+                    <a href="#" class="btn btn-site">Buy Now</a>
+                    <img src="images/Vector01.png" alt="">
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Cover Banner end -->
+
+<!-- course-info start  -->
+<section class="course-info">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="course-txt">
+              <h3 data-aos="fade-down" data-aos-duration="600">College Financial Aid - What you don't know can cost you tens of thousands of dollars!</h3>
+              <p data-aos="fade-down" data-aos-duration="700"><b>If you have kids preparing for college, please watch this video. $20 of education can prevent tens of thousands of dollars in mistakes you'll never even know you made.</b></p>
+              <p data-aos="fade-down" data-aos-duration="800">Dr. Kevin Bukatman helps the parents of high school students understand the challenges and opportunities in financial aid for college/university.  This hour-long video details specific "Do's" and "Do Not's" to help parents and students make educated decisions in school selection alongside finding and requesting different forms of financial aid.<p>
+              <p data-aos="fade-down" data-aos-duration="900">As with all Epee courses, we provide actual experience to help you avoid making costly mistakes. This is one of the most costly. Because parents expect college to be exorbitantly expensive, they don't question it when their expectation is met.  Without understanding financial aid options, programs, and even the calculation methods, families will very likely take on tens of thousands of dollars of unnecessary debt while leaving tens of thousands of dollars in aid on the table.</p>
+              <p data-aos="fade-down" data-aos-duration="900">Dr. Bukatman is also available for consultation upon request.</p>
+
+              <ul class="accordion list-unstyled">
+                <li class="active">
+                  <h5>Objective</h5>
+                  <div class="drop">
+                   <ul class="list-unstyled">
+                     <li>Understand what is and is not considered financial aid for college/university</li>
+                     <li>Define Merit-Based vs Need-Based financial aid programs</li>
+                     <li>Learn the important differences between Grants, Loans, Scholarships, and Work-Study programs</li>
+                     <li>Identify how many years of expenses you’ll actually need to plan to cover (hint, it’s rarely 4)</li>
+                     <li>Discuss the current state of university financials and endowments in spite of astronomically rising tuitions.</li>
+                     <li>Discuss how university financials impact both need and merit based financial aid availability and university admissions rates.</li>
+                     <li>Define and explain COA (Cost of Attendance): the breakout of all costs to attend different types colleges and universities.</li>
+                     <li>Identify the “Public Ivys” – State schools that typically offer the best return on investment.</li>
+                     <li>Discuss cost considerations for in-state vs out-of-state.</li>
+                     <li>Discuss Federal Student Aid (FSA) ID and why ALL students and at least one parent should get one.</li>
+                     <li>Define and understand EFC – Expected Family Contribution.</li>
+                     <li>Understand how universities and the government define Financial Need.</li>
+                     <li>Explain why the definition of Financial Need is critically important in evaluating how much different schools will ACTUALLY cost.</li>
+                     <li>SUPER important.  You’re unlikely to realize you made a mistake and this single item can easily cost you $10k per year!!!</li>
+                     <li>Explain the financial aid application process and schedule to follow.</li>
+                     <li>Understanding the importance of the FAFSA (Free Application for Student Aid) and common mistakes to avoid.</li>
+                     <li>Explain the CSS (College Scholastic Services) Profile used by 600+ schools to determine Need and non-governmental financial aid.</li>
+                     <li>Discuss the important differences between the FAFSA and a CSS Profile.</li>
+                     <li>Understand specific items that damage your Financial Need score if you’re not aware of it when filling out the paperwork.</li>
+                     <li>Understand important differences between Grants and Loans as well as distinctions within either category.</li>
+                     <li>Discuss the importance of minimizing debt and strategies to accomplish this.</li>
+                     <li>Explain why paying in cash is actually a horrible idea even if you can do it.</li>
+                     <li>Discuss “Parent Plus” loans and Private loans and explain some important differences.</li>
+                     <li>Learn how to Maximize Student Aid Eligibility</li>
+                     <li>Discuss the massive cost difference between public and private schools with respect to return-on-investment.</li>
+                     <li>Engineering degrees at Cornell can cost $42,000 more PER YEAR than PennState.</li>
+                     <li>Same degree, same starting salaries, $168,000 more debt!</li>
+                   </ul>
+                  </div>
+                </li>
+                <li>
+                  <h5>Topics</h5>
+                  <div class="drop">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id optio quae repudiandae dolore vero veli.</p>
+                  </div>
+                </li>
+                <li>
+                  <h5>lorem text 2</h5>
+                  <div class="drop">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id optio quae repudiandae dolore vero veli.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="social-icon">
+                <span>Share this Course</span>
+                <a href="#"><img src="images/facebook.svg" alt=""></a>
+                <a href="#"><img src="images/linkedin.svg" alt=""></a>
+                <a href="#"><img src="images/twitter.svg" alt=""></a>
+                <a href="#"><img src="images/email.svg" alt=""></a>
+                <a href="#"><img src="images/link-box.svg" alt=""></a>
+              </div>
+             
+
+              <div class="video-con" style="margin-top: 50px;">
+                <div id="vimeoWrap">
+                  <iframe src="http://player.vimeo.com/video/40977539?api=1" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                  </div>
+                  <a href="javascript:viod(0);" class="acb">STOP</a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-4">
+           <aside>
+            <div class="right-con">
+              <div class="certificate"> 
+                <ul class="list-unstyled"  data-aos="fade-down" data-aos-duration="900">
+                  <li><img src="images/license.svg" alt=""> Certificate of Completion</li>
+                  <li><img src="images/folder-clock-outline.svg" alt=""> Class available for 6 months</li>
+                  <li><img src="images/cloud-download-outline.svg" alt=""> 0 downloadable resources</li>
+                  <li><img src="images/school-outline.svg" alt=""> High School Student grade</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="d-flex dr-info"  data-aos="fade-down" data-aos-duration="1000">
+              <figure><img src="images/dr-kavin.png" alt=""></figure>
+              <div class="dr-kevin-info">
+                <h5>Dr. Kevin Bukatman</h5>
+                <p>Founder & President of College Planning Service America</p>
+              </div>
+            </div>
+           <div class="more-info mt-3"  data-aos="fade-down" data-aos-duration="1100">
+            <p>Dr. Kevin L. Bukatman, Founder & President of College Planning Service America, has been a consultant for families of college-bound families since 2006. He has presented hundreds of seminars and workshops on a variety of admissions and financial aid topics... <a href="javascript:void(0);">Read More</a></p>
+             <a href="#" class="btn">Leave a Message</a> 
+           </div>
+           <div class="popular_classes">
+            <div class="card"  data-aos="zoom-out" data-aos-duration="1200">
+              <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/sat-act.jpg" alt="Card image"><span class="orng-clr">HS</span></a>
+               <div class="card-body">
+               <p class="card-text mb-2">College Prep, Personal Development</p>
+                 <h5 class="card-title"><a href="#">SAT vs ACT: Which Test is Best for Me?</a></h5>
+                <div class="d-flex align-items-center client-info">
+                    <img src="images/dr-kavin.png" alt="">
+                     <span class="client-name">Dr. Kevin Bukatman</span>
+                    <span class="timer"><img src="images/timer.png" alt=""> 30 min</span>
+                </div>
+               </div>
+           </div>
+           </div>
+           </aside>
+          </div>
+         </div>
+      </div>
+    </div>
+</section>
+<!-- course-info end  -->
+
+
+<!-- Popular More Classes start -->
+<section class="section popular_classes course_step ">
+  <div class="container-fluid">
+      <div class="site-heading" >
+          <h2 class="mb-3" data-aos="fade-down" data-aos-duration="800">Top Selling Courses </h2>
+      </div>
+      <div class="categ-item" data-aos="fade-down" data-aos-duration="1000"> 
+          <div class="card">
+             <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/edu01.jpg" alt="Card image"><span class="orng-clr">HS</span></a>
+              <div class="card-body">
+              <small class="price01">$10</small>
+              <p class="card-text mb-2">College Prep, Personal Development</p>
+                <h5 class="card-title"><a href="#">Student Debt: The Hidden Dangers</a></h5>
+               <div class="d-flex align-items-center client-info">
+                   <img src="images/dr-kavin.png" alt="">
+                    <span class="client-name">Dr. Kevin </span>
+                   <span class="timer"><img src="images/timer.png" alt=""> 60 min</span>
+               </div>
+              </div>
+          </div>
+          <div class="card">
+             <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/edu02.jpg" alt="Card image"><span class="orng-clr">HS</span></a>
+             <div class="card-body">
+              <small class="price01">$10</small>
+              <p class="card-text mb-2">College Prep, Personal Development</p>
+                <h5 class="card-title"><a href="#">College Admissions Trends Today</a></h5>
+               <div class="d-flex align-items-center client-info">
+                <img src="images/dr-kavin.png" alt="">
+                    <span class="client-name">Dr. Kevin</span>
+                   <span class="timer"><img src="images/timer.png" alt=""> 60 min</span>
+               </div>
+              </div>
+          </div>
+          <div class="card">
+             <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/edu03.jpg" alt="Card image"><span class="blue-clr">yp</span></a>
+             <div class="card-body">
+              <small class="price01">$10</small>
+              <p class="card-text mb-2">College Prep, Personal Development</p>
+                <h5 class="card-title"><a href="#">Extracurricular Activities: Thinking Inside & Outside the Box</a></h5>
+               <div class="d-flex align-items-center client-info">
+                <img src="images/dr-kavin.png" alt="">
+                    <span class="client-name">Dr. Kevin </span>
+                   <span class="timer"><img src="images/timer.png" alt=""> 60 min</span>
+               </div>
+              </div>
+          </div>
+          <div class="card">
+             <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/edu04.jpg" alt="Card image"><span class="red-clr">pro</span></a>
+             <div class="card-body">
+              <small class="price01">$10</small>
+              <p class="card-text mb-2">College Prep, Personal Development</p>
+                <h5 class="card-title"><a href="#">Your College List: Fantasy vs. Reality</a></h5>
+               <div class="d-flex align-items-center client-info">
+                <img src="images/dr-kavin.png" alt="">
+                    <span class="client-name">Dr. Kevin</span>
+                   <span class="timer"><img src="images/timer.png" alt=""> 60 min</span>
+               </div>
+              </div>
+          </div>
+          <div class="card">
+             <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/classes05.png" alt="Card image"><span class="orng-clr">HS</span></a>
+              <div class="card-body">
+              <small class="price01">$5</small>
+              <p class="card-text mb-2">Business , Introduction , Personal Development...</p>
+                <h5 class="card-title"><a href="#">Landing your First Job. Professional Tools</a></h5>
+               <div class="d-flex align-items-center client-info">
+                   <img src="images/dr-kavin.png" alt="">
+                    <span class="client-name">Dr. Kevin</span>
+                   <span class="timer"><img src="images/timer.png" alt=""> 20 min</span>
+               </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Popular More Classes end -->
+
+<!-- More suggestions start -->
+<section class="all_courses popular_classes">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-3 col-md-6">
+        <div class="classes-txt"  data-aos="fade-down" data-aos-duration="1000">
+          <h3>More suggestions<br> for you</h3>
+          <p>Check out the courses or get a Full-Access Membership</p>
+          <a href="#"><img src="images/right-arrow-white.png" alt=""> See More Courses</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card"  data-aos="fade-down" data-aos-duration="1100">
+          <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/edu01.jpg" alt="Card image"><span class="cyan-clr">uni</span></a>
+           <div class="card-body">
+           <small class="price01">$10</small>
+           <p class="card-text mb-2">Personal Development, Personal Finances...</p>
+             <h5 class="card-title"><a href="#">Perspective on the GameStop Stock Manipulation Situation</a></h5>
+            <div class="d-flex align-items-center client-info">
+                <img src="images/jothan.png" alt="">
+                 <span class="client-name">Jonathan </span>
+                <span class="timer"><img src="images/timer.png" alt=""> 5 min</span>
+            </div>
+           </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card"  data-aos="fade-down" data-aos-duration="1200">
+          <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/classes04.png" alt="Card image"><span class="red-clr">pro</span></a>
+           <div class="card-body">
+           <small class="price01">$10</small>
+           <p class="card-text mb-2">Business, Engineering, Personal Development...</p>
+             <h5 class="card-title"><a href="#">Talking to your Boss when you're Overloaded</a></h5>
+            <div class="d-flex align-items-center client-info">
+                <img src="images/alan.png" alt="">
+                 <span class="client-name">Alan Levy</span>
+                <span class="timer"><img src="images/timer.png" alt=""> 3 min</span>
+            </div>
+           </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card"  data-aos="fade-down" data-aos-duration="1300">
+          <a href="#" class="card_thumbnail"><img class="card-img-top" src="images/classes03.png" alt="Card image"><span class="blue-clr">yp</span></a>
+           <div class="card-body">
+           <small class="price01">$10</small>
+           <p class="card-text mb-2">Business, Personal Development, Popular...</p>
+             <h5 class="card-title"><a href="#">Professionalism: Dress the Part</a></h5>
+            <div class="d-flex align-items-center client-info">
+                <img src="images/alan.png" alt="">
+                 <span class="client-name">Alan Levy</span>
+                <span class="timer"><img src="images/timer.png" alt=""> 6 min</span>
+            </div>
+           </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- More suggestions end -->
+
+</main>
+
+<!-- footer section Start -->
+<footer class="footer" style="background-image: url(images/strip-img.png);">
+    <div class="container-fluid">
+        <div class="row">
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1300">
+            <div class="footer_info">
+              <a href="index.html"><img src="images/footer-logo.png" alt=""></a>
+              <p class="mt-4">Epee Education is an e-learning platform for students and young professionals to fill the gap between academics and the real world</p>
+              <p class="copy_right">© Epee 2021. All rights reserved.</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1400">
+          <div class="footer_link">
+            <h4>Links</h4>
+            <div class="d-flex justify-content-between">
+              <ul class="list-unstyled">
+                <li><a href="#">Become A Member</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#"> Privacy Policy</a></li>
+              </ul>
+              <ul class="list-unstyled">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-lg-4 col-md-4" data-aos="fade-right" data-aos-duration="1500">
+          <div class="footer_link end-ftr">
+            <h4>Contact Us</h4>
+            <p><a href="mailto:admin@epee-education.com">admin@epee-education.com</a><br>
+            <a href="mailto:hello@epee-education.com">hello@epee-education.com</a><br>
+            <b><a href="tel:01234567889">01234567889</a></b>
+          </p>
+          <p class="copy_right">Feel free to contact us for any questions!</p>
+          </div>
+         </div>
+        </div>
+        <div class="ftr-btm">
+          
+        </div>
+    </div>
+</footer>
+    
+
+
+
+<!-- footer section Close -->
+
+<!-- back top button -->
+<div class="back-top"><a href="javascript:void(0)"><i class="fa fa-angle-up"></i></a></div>
+
+
+<!-- <script src="https://raw.github.com/vimeo/player-api/master/javascript/froogaloop.js"></script> -->
+
+<script src="js/jquery.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>
